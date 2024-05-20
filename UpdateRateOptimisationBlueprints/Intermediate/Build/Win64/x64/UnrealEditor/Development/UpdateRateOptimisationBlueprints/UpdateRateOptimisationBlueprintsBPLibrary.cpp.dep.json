@@ -1,0 +1,20 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "e:\\plugins\\project_builds\\ue54\\plugins\\updaterateoptimisationblueprints\\source\\updaterateoptimisationblueprints\\private\\updaterateoptimisationblueprintsbplibrary.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\plugins\\project_builds\\ue54\\intermediate\\build\\win64\\x64\\ue54editor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "e:\\plugins\\project_builds\\ue54\\plugins\\updaterateoptimisationblueprints\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\updaterateoptimisationblueprints\\definitions.updaterateoptimisationblueprints.h",
+            "e:\\plugins\\project_builds\\ue54\\plugins\\updaterateoptimisationblueprints\\source\\updaterateoptimisationblueprints\\public\\updaterateoptimisationblueprintsbplibrary.h",
+            "e:\\plugins\\project_builds\\ue54\\plugins\\updaterateoptimisationblueprints\\intermediate\\build\\win64\\unrealeditor\\inc\\updaterateoptimisationblueprints\\uht\\updaterateoptimisationblueprintsbplibrary.generated.h",
+            "e:\\plugins\\project_builds\\ue54\\plugins\\updaterateoptimisationblueprints\\source\\updaterateoptimisationblueprints\\public\\updaterateoptimisationblueprints.h",
+            "d:\\epic\\ue_5.4\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\engine\\gameengine.h",
+            "d:\\epic\\ue_5.4\\ue_5.4\\engine\\source\\runtime\\slate\\public\\widgets\\sviewport.h",
+            "d:\\epic\\ue_5.4\\ue_5.4\\engine\\source\\runtime\\moviescenecapture\\public\\moviescenecapturehandle.h",
+            "d:\\epic\\ue_5.4\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gameengine.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
