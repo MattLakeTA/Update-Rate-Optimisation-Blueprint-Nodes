@@ -2,7 +2,7 @@
 	"FileVersion": 3,
 	"Version": 1,
 	"VersionName": "1.0",
-	"EngineVersion": "5.3",
+	"EngineVersion": "5.2",
 	"FriendlyName": "Update Rate Optimisation Blueprints",
 	"Description": "Blueprint nodes for Update Rate Optimisation (URO).",
 	"Category": "Animation",
