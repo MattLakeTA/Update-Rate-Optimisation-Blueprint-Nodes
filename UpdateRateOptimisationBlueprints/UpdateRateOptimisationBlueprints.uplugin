@@ -1,0 +1,26 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"EngineVersion": "5.4",
+	"FriendlyName": "Update Rate Optimisation Blueprints",
+	"Description": "Blueprint nodes for Update Rate Optimisation (URO).",
+	"Category": "Animation",
+	"CreatedBy": "Matthew Lake",
+	"CreatedByURL": "www.MatthewLake.net",
+	"DocsURL": "https://www.youtube.com/watch?v=zyOjCvT7AHU",
+	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/59351c01b20248379fef0fe48de04e97",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "UpdateRateOptimisationBlueprints",
+			"Type": "Runtime",
+			"LoadingPhase": "PreLoadingScreen",
+			"WhitelistPlatforms": [ "Win64" ]
+		}
+	]
+}
