@@ -1,0 +1,13 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-UpdateRateOptimisationBlueprints.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"E:\Plugins\Project_Builds\UE427\Intermediate\Build\Win64\UE427Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"E:\Plugins\Project_Builds\UE427\Plugins\UpdateRateOptimisationBlueprints\Intermediate\Build\Win64\UE4Editor\Development\UpdateRateOptimisationBlueprints\Module.UpdateRateOptimisationBlueprints.cpp.obj"
+"E:\Plugins\Project_Builds\UE427\Plugins\UpdateRateOptimisationBlueprints\Intermediate\Build\Win64\UE4Editor\Development\UpdateRateOptimisationBlueprints\Module.UpdateRateOptimisationBlueprints.gen.cpp.obj"
+"E:\Plugins\Project_Builds\UE427\Plugins\UpdateRateOptimisationBlueprints\Intermediate\Build\Win64\UE4Editor\Development\UpdateRateOptimisationBlueprints\Default.rc2.res"
+/OUT:"E:\Plugins\Project_Builds\UE427\Plugins\UpdateRateOptimisationBlueprints\Intermediate\Build\Win64\UE4Editor\Development\UpdateRateOptimisationBlueprints\UE4Editor-UpdateRateOptimisationBlueprints.lib"

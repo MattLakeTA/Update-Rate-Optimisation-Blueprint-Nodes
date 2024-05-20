@@ -1,0 +1,13 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.UpdateRateOptimisationBlueprints.cpp.obj": [
+			"UpdateRateOptimisationBlueprints.cpp.obj",
+			"UpdateRateOptimisationBlueprintsBPLibrary.cpp.obj"
+		],
+		"Module.UpdateRateOptimisationBlueprints.gen.cpp.obj": [
+			"UpdateRateOptimisationBlueprints.init.gen.cpp.obj",
+			"UpdateRateOptimisationBlueprintsBPLibrary.gen.cpp.obj"
+		]
+	}
+}
