@@ -1,0 +1,24 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "e:\\plugins\\project_builds\\ue51\\plugins\\updaterateoptimisationblueprints\\intermediate\\build\\win64\\unrealeditor\\development\\updaterateoptimisationblueprints\\module.updaterateoptimisationblueprints.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\plugins\\project_builds\\ue51\\intermediate\\build\\win64\\ue51editor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "e:\\plugins\\project_builds\\ue51\\plugins\\updaterateoptimisationblueprints\\intermediate\\build\\win64\\unrealeditor\\development\\updaterateoptimisationblueprints\\definitions.updaterateoptimisationblueprints.h",
+            "e:\\plugins\\project_builds\\ue51\\plugins\\updaterateoptimisationblueprints\\intermediate\\build\\win64\\unrealeditor\\inc\\updaterateoptimisationblueprints\\uht\\updaterateoptimisationblueprints.init.gen.cpp",
+            "e:\\plugins\\project_builds\\ue51\\plugins\\updaterateoptimisationblueprints\\intermediate\\build\\win64\\unrealeditor\\inc\\updaterateoptimisationblueprints\\uht\\updaterateoptimisationblueprintsbplibrary.gen.cpp",
+            "e:\\plugins\\project_builds\\ue51\\plugins\\updaterateoptimisationblueprints\\source\\updaterateoptimisationblueprints\\public\\updaterateoptimisationblueprintsbplibrary.h",
+            "e:\\plugins\\project_builds\\ue51\\plugins\\updaterateoptimisationblueprints\\intermediate\\build\\win64\\unrealeditor\\inc\\updaterateoptimisationblueprints\\uht\\updaterateoptimisationblueprintsbplibrary.generated.h",
+            "e:\\plugins\\project_builds\\ue51\\plugins\\updaterateoptimisationblueprints\\source\\updaterateoptimisationblueprints\\private\\updaterateoptimisationblueprints.cpp",
+            "e:\\plugins\\project_builds\\ue51\\plugins\\updaterateoptimisationblueprints\\source\\updaterateoptimisationblueprints\\public\\updaterateoptimisationblueprints.h",
+            "e:\\plugins\\project_builds\\ue51\\plugins\\updaterateoptimisationblueprints\\source\\updaterateoptimisationblueprints\\private\\updaterateoptimisationblueprintsbplibrary.cpp",
+            "d:\\epic\\ue_5.1\\engine\\source\\runtime\\engine\\classes\\engine\\gameengine.h",
+            "d:\\epic\\ue_5.1\\engine\\source\\runtime\\slate\\public\\widgets\\sviewport.h",
+            "d:\\epic\\ue_5.1\\engine\\source\\runtime\\moviescenecapture\\public\\moviescenecapturehandle.h",
+            "d:\\epic\\ue_5.1\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gameengine.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
