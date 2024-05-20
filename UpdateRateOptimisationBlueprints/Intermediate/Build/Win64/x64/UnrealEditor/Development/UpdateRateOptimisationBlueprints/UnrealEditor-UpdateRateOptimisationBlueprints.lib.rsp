@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-UpdateRateOptimisationBlueprints.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"E:\Plugins\Project_Builds\UE53\Intermediate\Build\Win64\x64\UE53Editor\Development\Engine\SharedPCH.Engine.Cpp20.h.obj"
+"E:\Plugins\Project_Builds\UE53\Plugins\UpdateRateOptimisationBlueprints\Intermediate\Build\Win64\x64\UnrealEditor\Development\UpdateRateOptimisationBlueprints\Module.UpdateRateOptimisationBlueprints.cpp.obj"
+"E:\Plugins\Project_Builds\UE53\Plugins\UpdateRateOptimisationBlueprints\Intermediate\Build\Win64\x64\UnrealEditor\Development\UpdateRateOptimisationBlueprints\Default.rc2.res"
+/OUT:"E:\Plugins\Project_Builds\UE53\Plugins\UpdateRateOptimisationBlueprints\Intermediate\Build\Win64\x64\UnrealEditor\Development\UpdateRateOptimisationBlueprints\UnrealEditor-UpdateRateOptimisationBlueprints.lib"
