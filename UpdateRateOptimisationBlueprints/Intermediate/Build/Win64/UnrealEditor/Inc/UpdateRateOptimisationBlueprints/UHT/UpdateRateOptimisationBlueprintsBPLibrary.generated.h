@@ -5,19 +5,23 @@
 ===========================================================================*/
 
 // IWYU pragma: private, include "UpdateRateOptimisationBlueprintsBPLibrary.h"
-#include "UObject/ObjectMacros.h"
-#include "UObject/ScriptMacros.h"
 
-PRAGMA_DISABLE_DEPRECATION_WARNINGS
- 
-class USkinnedMeshComponent;
-enum class EUpdateRateOptimisationMode : uint8;
 #ifdef UPDATERATEOPTIMISATIONBLUEPRINTS_UpdateRateOptimisationBlueprintsBPLibrary_generated_h
 #error "UpdateRateOptimisationBlueprintsBPLibrary.generated.h already included, missing '#pragma once' in UpdateRateOptimisationBlueprintsBPLibrary.h"
 #endif
 #define UPDATERATEOPTIMISATIONBLUEPRINTS_UpdateRateOptimisationBlueprintsBPLibrary_generated_h
 
-#define FID_MyProjectFivePointFive_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_23_RPC_WRAPPERS \
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+
+ 
+class USkinnedMeshComponent;
+enum class EUpdateRateOptimisationMode : uint8;
+
+// ********** Begin Class UUpdateRateOptimisationBlueprintsBPLibrary *******************************
+#define FID_MyProject2_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_23_RPC_WRAPPERS \
 	DECLARE_FUNCTION(execGetCurrentUpdateRate); \
 	DECLARE_FUNCTION(execGetCurrentMaxDistanceFactor); \
 	DECLARE_FUNCTION(execGetInterpolateSkippedFrames); \
@@ -42,46 +46,50 @@ enum class EUpdateRateOptimisationMode : uint8;
 	DECLARE_FUNCTION(execSetUpdateRateOptimisationMode);
 
 
-#define FID_MyProjectFivePointFive_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_23_INCLASS \
+UPDATERATEOPTIMISATIONBLUEPRINTS_API UClass* Z_Construct_UClass_UUpdateRateOptimisationBlueprintsBPLibrary_NoRegister();
+
+#define FID_MyProject2_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_23_INCLASS \
 private: \
 	static void StaticRegisterNativesUUpdateRateOptimisationBlueprintsBPLibrary(); \
 	friend struct Z_Construct_UClass_UUpdateRateOptimisationBlueprintsBPLibrary_Statics; \
+	static UClass* GetPrivateStaticClass(); \
+	friend UPDATERATEOPTIMISATIONBLUEPRINTS_API UClass* Z_Construct_UClass_UUpdateRateOptimisationBlueprintsBPLibrary_NoRegister(); \
 public: \
-	DECLARE_CLASS(UUpdateRateOptimisationBlueprintsBPLibrary, UBlueprintFunctionLibrary, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/UpdateRateOptimisationBlueprints"), NO_API) \
+	DECLARE_CLASS2(UUpdateRateOptimisationBlueprintsBPLibrary, UBlueprintFunctionLibrary, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/UpdateRateOptimisationBlueprints"), Z_Construct_UClass_UUpdateRateOptimisationBlueprintsBPLibrary_NoRegister) \
 	DECLARE_SERIALIZER(UUpdateRateOptimisationBlueprintsBPLibrary)
 
 
-#define FID_MyProjectFivePointFive_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_23_STANDARD_CONSTRUCTORS \
+#define FID_MyProject2_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_23_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UUpdateRateOptimisationBlueprintsBPLibrary(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UUpdateRateOptimisationBlueprintsBPLibrary) \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UUpdateRateOptimisationBlueprintsBPLibrary); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UUpdateRateOptimisationBlueprintsBPLibrary); \
-private: \
-	/** Private move- and copy-constructors, should never be used */ \
-	UUpdateRateOptimisationBlueprintsBPLibrary(UUpdateRateOptimisationBlueprintsBPLibrary&&); \
-	UUpdateRateOptimisationBlueprintsBPLibrary(const UUpdateRateOptimisationBlueprintsBPLibrary&); \
-public: \
+	/** Deleted move- and copy-constructors, should never be used */ \
+	UUpdateRateOptimisationBlueprintsBPLibrary(UUpdateRateOptimisationBlueprintsBPLibrary&&) = delete; \
+	UUpdateRateOptimisationBlueprintsBPLibrary(const UUpdateRateOptimisationBlueprintsBPLibrary&) = delete; \
 	NO_API virtual ~UUpdateRateOptimisationBlueprintsBPLibrary();
 
 
-#define FID_MyProjectFivePointFive_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_20_PROLOG
-#define FID_MyProjectFivePointFive_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_23_GENERATED_BODY_LEGACY \
+#define FID_MyProject2_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_20_PROLOG
+#define FID_MyProject2_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_23_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_MyProjectFivePointFive_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_23_RPC_WRAPPERS \
-	FID_MyProjectFivePointFive_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_23_INCLASS \
-	FID_MyProjectFivePointFive_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_23_STANDARD_CONSTRUCTORS \
+	FID_MyProject2_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_23_RPC_WRAPPERS \
+	FID_MyProject2_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_23_INCLASS \
+	FID_MyProject2_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_23_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-template<> UPDATERATEOPTIMISATIONBLUEPRINTS_API UClass* StaticClass<class UUpdateRateOptimisationBlueprintsBPLibrary>();
+class UUpdateRateOptimisationBlueprintsBPLibrary;
+
+// ********** End Class UUpdateRateOptimisationBlueprintsBPLibrary *********************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_MyProjectFivePointFive_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h
+#define CURRENT_FILE_ID FID_MyProject2_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h
 
-
+// ********** Begin Enum EUpdateRateOptimisationMode ***********************************************
 #define FOREACH_ENUM_EUPDATERATEOPTIMISATIONMODE(op) \
 	op(EUpdateRateOptimisationMode::None) \
 	op(EUpdateRateOptimisationMode::VisibleDistanceFactorThresholds) \
@@ -90,5 +98,6 @@ template<> UPDATERATEOPTIMISATIONBLUEPRINTS_API UClass* StaticClass<class UUpdat
 enum class EUpdateRateOptimisationMode : uint8;
 template<> struct TIsUEnumClass<EUpdateRateOptimisationMode> { enum { Value = true }; };
 template<> UPDATERATEOPTIMISATIONBLUEPRINTS_API UEnum* StaticEnum<EUpdateRateOptimisationMode>();
+// ********** End Enum EUpdateRateOptimisationMode *************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

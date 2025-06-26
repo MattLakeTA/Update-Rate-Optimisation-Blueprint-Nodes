@@ -1,17 +1,18 @@
-"C:\Users\Matt\Documents\UnrealProjects\MyProjectFivePointFive\Plugins\UpdateRateOptimisationBlueprints\Intermediate\Build\Win64\x64\UnrealEditor\Development\UpdateRateOptimisationBlueprints\Module.UpdateRateOptimisationBlueprints.cpp"
-/FI"C:\Users\Matt\Documents\UnrealProjects\MyProjectFivePointFive\Intermediate\Build\Win64\x64\MyProjectEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.InclOrderUnreal5_3.h"
-/FI"C:\Users\Matt\Documents\UnrealProjects\MyProjectFivePointFive\Plugins\UpdateRateOptimisationBlueprints\Intermediate\Build\Win64\x64\UnrealEditor\Development\UpdateRateOptimisationBlueprints\Definitions.UpdateRateOptimisationBlueprints.h"
-/Yu"C:\Users\Matt\Documents\UnrealProjects\MyProjectFivePointFive\Intermediate\Build\Win64\x64\MyProjectEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.InclOrderUnreal5_3.h"
-/Fp"C:\Users\Matt\Documents\UnrealProjects\MyProjectFivePointFive\Intermediate\Build\Win64\x64\MyProjectEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.InclOrderUnreal5_3.h.pch"
-/Fo"C:\Users\Matt\Documents\UnrealProjects\MyProjectFivePointFive\Plugins\UpdateRateOptimisationBlueprints\Intermediate\Build\Win64\x64\UnrealEditor\Development\UpdateRateOptimisationBlueprints\Module.UpdateRateOptimisationBlueprints.cpp.obj"
-/experimental:log "C:\Users\Matt\Documents\UnrealProjects\MyProjectFivePointFive\Plugins\UpdateRateOptimisationBlueprints\Intermediate\Build\Win64\x64\UnrealEditor\Development\UpdateRateOptimisationBlueprints\Module.UpdateRateOptimisationBlueprints.cpp.sarif"
-/sourceDependencies "C:\Users\Matt\Documents\UnrealProjects\MyProjectFivePointFive\Plugins\UpdateRateOptimisationBlueprints\Intermediate\Build\Win64\x64\UnrealEditor\Development\UpdateRateOptimisationBlueprints\Module.UpdateRateOptimisationBlueprints.cpp.dep.json"
-@"C:\Users\Matt\Documents\UnrealProjects\MyProjectFivePointFive\Plugins\UpdateRateOptimisationBlueprints\Intermediate\Build\Win64\x64\UnrealEditor\Development\UpdateRateOptimisationBlueprints\UpdateRateOptimisationBlueprints.Shared.rsp"
+"C:/Users/Matt/Documents/Unreal Projects/MyProject2/Plugins/UpdateRateOptimisationBlueprints/Intermediate/Build/Win64/x64/UnrealEditor/Development/UpdateRateOptimisationBlueprints/Module.UpdateRateOptimisationBlueprints.cpp"
+@"C:/Users/Matt/Documents/Unreal Projects/MyProject2/Plugins/UpdateRateOptimisationBlueprints/Intermediate/Build/Win64/x64/UnrealEditor/Development/UpdateRateOptimisationBlueprints/UpdateRateOptimisationBlueprints.Shared.rsp"
+/FI"C:/Users/Matt/Documents/Unreal Projects/MyProject2/Intermediate/Build/Win64/x64/MyProject2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_3.h"
+/FI"C:/Users/Matt/Documents/Unreal Projects/MyProject2/Plugins/UpdateRateOptimisationBlueprints/Intermediate/Build/Win64/x64/UnrealEditor/Development/UpdateRateOptimisationBlueprints/Definitions.UpdateRateOptimisationBlueprints.h"
+/Yu"C:/Users/Matt/Documents/Unreal Projects/MyProject2/Intermediate/Build/Win64/x64/MyProject2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_3.h"
+/Fp"C:/Users/Matt/Documents/Unreal Projects/MyProject2/Intermediate/Build/Win64/x64/MyProject2Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_3.h.pch"
+/Fo"C:/Users/Matt/Documents/Unreal Projects/MyProject2/Plugins/UpdateRateOptimisationBlueprints/Intermediate/Build/Win64/x64/UnrealEditor/Development/UpdateRateOptimisationBlueprints/Module.UpdateRateOptimisationBlueprints.cpp.obj"
+/experimental:log "C:/Users/Matt/Documents/Unreal Projects/MyProject2/Plugins/UpdateRateOptimisationBlueprints/Intermediate/Build/Win64/x64/UnrealEditor/Development/UpdateRateOptimisationBlueprints/Module.UpdateRateOptimisationBlueprints.cpp.sarif"
+/sourceDependencies "C:/Users/Matt/Documents/Unreal Projects/MyProject2/Plugins/UpdateRateOptimisationBlueprints/Intermediate/Build/Win64/x64/UnrealEditor/Development/UpdateRateOptimisationBlueprints/Module.UpdateRateOptimisationBlueprints.cpp.dep.json"
 /d2ssa-cfg-question-
 /Zc:inline
 /nologo
 /Oi
 /FC
+/diagnostics:caret
 /c
 /Gw
 /Gy
@@ -39,15 +40,14 @@
 /fp:fast
 /Zo
 /Zp8
+/W4
 /we4456
 /we4458
 /we4459
-/we4668
 /wd4244
 /wd4838
 /TP
 /GR-
-/W4
 /std:c++20
 /Zc:preprocessor
 /wd5054

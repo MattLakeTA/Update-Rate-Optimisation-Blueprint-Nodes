@@ -7,20 +7,23 @@
                 {
                     "ruleId": "C4996",
                     "message": {
-                        "text": "'TArray<int,FDefaultAllocator>::SetNum': SetNum with a boolean bAllowShrinking has been deprecated - please use the EAllowShrinking enum instead Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                        "text": "'TArray<int,FDefaultAllocator>::SetNum': SetNum with a boolean bAllowShrinking has been deprecated - please use the EAllowShrinking enum instead - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
                     },
                     "analysisTarget": {
-                        "uri": "file:///C:/Users/Matt/Documents/UnrealProjects/MyProjectFivePointFive/Plugins/UpdateRateOptimisationBlueprints/Source/UpdateRateOptimisationBlueprints/Private/UpdateRateOptimisationBlueprintsBPLibrary.cpp"
+                        "uri": "file:///C:/Users/Matt/Documents/Unreal Projects/MyProject2/Plugins/UpdateRateOptimisationBlueprints/Source/UpdateRateOptimisationBlueprints/Private/UpdateRateOptimisationBlueprintsBPLibrary.cpp"
                     },
                     "locations": [
                         {
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "uri": "file:///C:/Users/Matt/Documents/UnrealProjects/MyProjectFivePointFive/Plugins/UpdateRateOptimisationBlueprints/Source/UpdateRateOptimisationBlueprints/Private/UpdateRateOptimisationBlueprintsBPLibrary.cpp"
+                                    "uri": "file:///C:/Users/Matt/Documents/Unreal Projects/MyProject2/Plugins/UpdateRateOptimisationBlueprints/Source/UpdateRateOptimisationBlueprints/Private/UpdateRateOptimisationBlueprintsBPLibrary.cpp"
                                 },
                                 "region": {
                                     "startLine": 218,
-                                    "startColumn": 32
+                                    "startColumn": 32,
+                                    "snippet": {
+                                        "text": "            LODToFrameSkipArray.SetNum(Index + 1, false);"
+                                    }
                                 }
                             }
                         }
