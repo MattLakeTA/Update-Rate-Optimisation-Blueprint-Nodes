@@ -7,28 +7,8 @@
 
 DEFINE_LOG_CATEGORY(LogUpdateRateOptimisations);
 
-UUpdateRateOptimisationBlueprintsBPLibrary::UUpdateRateOptimisationBlueprintsBPLibrary(const FObjectInitializer& ObjectInitializer)
-: Super(ObjectInitializer)
+static void SetUpdateRateOptimisationModeImpl(USkinnedMeshComponent* SkinnedMeshComponent, EUpdateRateOptimisationMode UpdateRateOptimisationMode)
 {
-
-}
-
-void UUpdateRateOptimisationBlueprintsBPLibrary::PrintAndLogMessage(const FString& Message)
-{
-    #if !UE_BUILD_SHIPPING
-    UE_LOG(LogUpdateRateOptimisations, Warning, TEXT("%s"), *Message);
-    GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, Message);
-    #endif
-}
-
-void UUpdateRateOptimisationBlueprintsBPLibrary::SetUpdateRateOptimisationMode(USkinnedMeshComponent* SkinnedMeshComponent, EUpdateRateOptimisationMode UpdateRateOptimisationMode)
-{
-    if (!SkinnedMeshComponent)
-    {
-        PrintAndLogMessage(TEXT("URO Set Update Rate Optimisation Mode - SkinnedMeshComponent is null."));
-        return;
-    }
-
     switch (UpdateRateOptimisationMode)
     {
     case EUpdateRateOptimisationMode::VisibleDistanceFactorThresholds:
@@ -40,6 +20,105 @@ void UUpdateRateOptimisationBlueprintsBPLibrary::SetUpdateRateOptimisationMode(U
     default:
         break;
     }
+}
+
+static void SetVisibleDistanceFactorThresholdsImpl(USkinnedMeshComponent* SkinnedMeshComponent, const TArray<float>& VisibleDistanceFactorThesholds)
+{
+    SkinnedMeshComponent->AnimUpdateRateParams->BaseVisibleDistanceFactorThesholds.Empty();
+
+    for (float MaxDistanceThreshold : VisibleDistanceFactorThesholds)
+    {
+        SkinnedMeshComponent->AnimUpdateRateParams->BaseVisibleDistanceFactorThesholds.Add(MaxDistanceThreshold);
+    }
+}
+
+static void SetLODToFrameSkipArrayImpl(USkinnedMeshComponent* SkinnedMeshComponent, const TArray<int32>& LODToFrameSkipArray)
+{
+    SkinnedMeshComponent->AnimUpdateRateParams->LODToFrameSkipMap.Empty();
+
+    for (int32 Index = 0; Index < LODToFrameSkipArray.Num(); Index++)
+    {
+        int32 LODIndex = Index;
+        int32 FramesToSkip = LODToFrameSkipArray[Index];
+
+        SkinnedMeshComponent->AnimUpdateRateParams->LODToFrameSkipMap.Add(LODIndex, FramesToSkip);
+    }
+}
+
+UUpdateRateOptimisationBlueprintsBPLibrary::UUpdateRateOptimisationBlueprintsBPLibrary(const FObjectInitializer& ObjectInitializer)
+    : Super(ObjectInitializer)
+{
+
+}
+
+void UUpdateRateOptimisationBlueprintsBPLibrary::PrintAndLogMessage(const FString& Message)
+{
+#if !UE_BUILD_SHIPPING
+    UE_LOG(LogUpdateRateOptimisations, Warning, TEXT("%s"), *Message);
+    GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, Message);
+#endif
+}
+
+void UUpdateRateOptimisationBlueprintsBPLibrary::SetUpdateRateOptimisationByDataAsset(USkinnedMeshComponent* SkinnedMeshComponent, bool bEnable, UUpdateRateOptimisationDataAsset* UpdateRateOptimisationDataAsset)
+{
+    if (!SkinnedMeshComponent)
+    {
+        PrintAndLogMessage(TEXT("URO Set Update Rate Optimisation By Data Asset - SkinnedMeshComponent is null."));
+        return;
+    }
+
+    if (!UpdateRateOptimisationDataAsset)
+    {
+        PrintAndLogMessage(TEXT("URO Set Update Rate Optimisation By Data Asset - Data Asset is null."));
+        return;
+    }
+
+    FUpdateRateOptimisationStruct UpdateRateOptimisationStruct = UpdateRateOptimisationDataAsset->UpdateRateOptimisationStruct;
+    SetUpdateRateOptimisationByStruct(SkinnedMeshComponent, bEnable, UpdateRateOptimisationStruct);
+    return;
+}
+
+void UUpdateRateOptimisationBlueprintsBPLibrary::SetUpdateRateOptimisationByStruct(USkinnedMeshComponent* SkinnedMeshComponent, bool bEnable, FUpdateRateOptimisationStruct UpdateRateOptimisationStruct)
+{
+    if (!SkinnedMeshComponent)
+    {
+        PrintAndLogMessage(TEXT("URO Set Update Rate Optimisation By Struct - SkinnedMeshComponent is null."));
+        return;
+    }
+
+    // Set the URO Mode
+    SetUpdateRateOptimisationModeImpl(SkinnedMeshComponent, UpdateRateOptimisationStruct.UpdateRateOptimisationMode);
+
+    // Set visible distance factor thresholds
+    SetVisibleDistanceFactorThresholdsImpl(SkinnedMeshComponent, UpdateRateOptimisationStruct.VisibleDistanceFactorThesholds);
+
+    // Set LOD to frame skip array
+    SetLODToFrameSkipArrayImpl(SkinnedMeshComponent, UpdateRateOptimisationStruct.LODToFrameSkipArray);
+    
+    // Set interpolate skipped frames
+    SkinnedMeshComponent->AnimUpdateRateParams->bInterpolateSkippedFrames = UpdateRateOptimisationStruct.bSetInterpolateSkippedFrames;
+
+    // Set Max Eval Rate for Interpolation
+    SkinnedMeshComponent->AnimUpdateRateParams->MaxEvalRateForInterpolation = UpdateRateOptimisationStruct.MaxEvalRateForInterpolation;
+    
+    // Set Base Non Rendered Update Rate
+    SkinnedMeshComponent->AnimUpdateRateParams->BaseNonRenderedUpdateRate = UpdateRateOptimisationStruct.BaseNonRenderedUpdateRate;
+    
+    // Set URO Enabled
+    SkinnedMeshComponent->bEnableUpdateRateOptimizations = bEnable;
+
+    return;
+}
+
+void UUpdateRateOptimisationBlueprintsBPLibrary::SetUpdateRateOptimisationMode(USkinnedMeshComponent* SkinnedMeshComponent, EUpdateRateOptimisationMode UpdateRateOptimisationMode)
+{
+    if (!SkinnedMeshComponent)
+    {
+        PrintAndLogMessage(TEXT("URO Set Update Rate Optimisation Mode - SkinnedMeshComponent is null."));
+        return;
+    }
+
+    SetUpdateRateOptimisationModeImpl(SkinnedMeshComponent, UpdateRateOptimisationMode);
 }
 
 EUpdateRateOptimisationMode UUpdateRateOptimisationBlueprintsBPLibrary::GetUpdateRateOptimisationMode(USkinnedMeshComponent* SkinnedMeshComponent)
@@ -88,12 +167,7 @@ void UUpdateRateOptimisationBlueprintsBPLibrary::SetVisibleDistanceFactorThresho
         return;
     }
 
-    SkinnedMeshComponent->AnimUpdateRateParams->BaseVisibleDistanceFactorThesholds.Empty();
-
-    for (float MaxDistanceThreshold : VisibleDistanceFactorThesholds)
-    {
-        SkinnedMeshComponent->AnimUpdateRateParams->BaseVisibleDistanceFactorThesholds.Add(MaxDistanceThreshold);
-    }
+    SetVisibleDistanceFactorThresholdsImpl(SkinnedMeshComponent, VisibleDistanceFactorThesholds);
 }
 
 TArray<float> UUpdateRateOptimisationBlueprintsBPLibrary::GetVisibleDistanceFactorThresholds(USkinnedMeshComponent* SkinnedMeshComponent)
@@ -185,15 +259,7 @@ void UUpdateRateOptimisationBlueprintsBPLibrary::SetLODToFrameSkipArray(USkinned
         return;
     }
 
-    SkinnedMeshComponent->AnimUpdateRateParams->LODToFrameSkipMap.Empty();
-
-    for (int32 Index = 0; Index < LODToFrameSkipArray.Num(); Index++)
-    {
-        int32 LODIndex = Index;
-        int32 FramesToSkip = LODToFrameSkipArray[Index];
-
-        SkinnedMeshComponent->AnimUpdateRateParams->LODToFrameSkipMap.Add(LODIndex, FramesToSkip);
-    }
+    SetLODToFrameSkipArrayImpl(SkinnedMeshComponent, LODToFrameSkipArray);
 }
 
 TArray<int32> UUpdateRateOptimisationBlueprintsBPLibrary::GetLODToFrameSkipArray(USkinnedMeshComponent* SkinnedMeshComponent)

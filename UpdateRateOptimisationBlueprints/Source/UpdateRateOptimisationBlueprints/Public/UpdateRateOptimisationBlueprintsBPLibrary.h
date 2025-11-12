@@ -17,10 +17,77 @@ enum class EUpdateRateOptimisationMode : uint8
 	LODToFrameSkipMap
 };
 
+USTRUCT(BlueprintType, Category = "Update Rate Optimisation Blueprints")
+struct FUpdateRateOptimisationStruct
+{
+	GENERATED_BODY()
+
+public:
+	/*Determines the update rate optimisation method.
+	Visible Distance Factor Threshold will use the screen ratio, while LOD To Frame Skip Map will utilise the LODs to change the optimisation settings.*/
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	EUpdateRateOptimisationMode UpdateRateOptimisationMode;
+
+	/*Set the visible threshold distances that determine the update rate changes when rendered.
+	0 frame skip, MaxDistanceFactor > 0.4f. 1 frame skip, MaxDistanceFactor > 0.2f.
+	Only used when UpdateRateOptimisationMode is set to VisibleDistanceFactor*/
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	TArray<float> VisibleDistanceFactorThesholds;
+
+	/*Sets the LOD To Frame Skip map for URO - Array entry index is the LOD index, the value is the skip rate.
+	Only used when UpdateRateOptimisationMode is set to LODToFrameSkipArray*/
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	TArray<int32> LODToFrameSkipArray;
+
+	/*Whether or not to disable interpolation between frames that have been skipped.*/
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	bool bSetInterpolateSkippedFrames;
+
+	/*Sets the threshold value to disable animation interpolation. For example, below 15 will stop interpolating.*/
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	int MaxEvalRateForInterpolation;
+
+	/*Sets the rate of animation evaluation when non rendered (off screen / dedicated server). A value of 4 means 4 frames will be skipped then the 5th will update.*/
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	int BaseNonRenderedUpdateRate;
+
+	// constructor
+	FUpdateRateOptimisationStruct():
+		UpdateRateOptimisationMode(EUpdateRateOptimisationMode::VisibleDistanceFactorThresholds),
+		VisibleDistanceFactorThesholds({ 0.4, 0.3, 0.2, 0.1, 0.05, 0.04, 0.03, 0.02, 0.01, 0.005, 0.00125, 0.000625, 0.000313, 0.000156, 0.000078, 0.000039 }),
+		LODToFrameSkipArray( {0, 3, 6, 12, 15} ),
+		bSetInterpolateSkippedFrames(true),
+		MaxEvalRateForInterpolation(15),
+		BaseNonRenderedUpdateRate(60)
+	{
+	}
+};
+
+/// This is the data asset that stores the information to build any actor/prop/etc.
+UCLASS(BlueprintType)
+class UUpdateRateOptimisationDataAsset : public UPrimaryDataAsset
+{
+	GENERATED_BODY()
+
+public:
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	FUpdateRateOptimisationStruct UpdateRateOptimisationStruct;
+};
+
 UCLASS(Category = "Update Rate Optimisations")
 class UUpdateRateOptimisationBlueprintsBPLibrary : public UBlueprintFunctionLibrary
 {
 	GENERATED_UCLASS_BODY()
+
+	/*Determines the update rate optimisation method via a struct that contains all the relevant information, rather than applying with individual nodes.
+	Visible Distance Factor Threshold will use the screen ratio, while LOD To Frame Skip Map will utilise the LODs to change the optimisation settings.*/
+	UFUNCTION(BlueprintCallable, Category = "Update Rate Optimisations", meta = (Keywords = "URO Skeletal Mesh"))
+	static void SetUpdateRateOptimisationByDataAsset(USkinnedMeshComponent* SkinnedMeshComponent, bool bEnable, UUpdateRateOptimisationDataAsset* UpdateRateOptimisationDataAsset);
+
+	/*Determines the update rate optimisation method via a struct that contains all the relevant information, rather than applying with individual nodes.
+	Visible Distance Factor Threshold will use the screen ratio, while LOD To Frame Skip Map will utilise the LODs to change the optimisation settings.*/
+	UFUNCTION(BlueprintCallable, Category = "Update Rate Optimisations", meta = (Keywords = "URO Skeletal Mesh"))
+	static void SetUpdateRateOptimisationByStruct(USkinnedMeshComponent* SkinnedMeshComponent, bool bEnable, FUpdateRateOptimisationStruct UpdateRateOptimisationSettings);
 
 	/*Determines the update rate optimisation method. 
 	Visible Distance Factor Threshold will use the screen ratio, while LOD To Frame Skip Map will utilise the LODs to change the optimisation settings.*/
