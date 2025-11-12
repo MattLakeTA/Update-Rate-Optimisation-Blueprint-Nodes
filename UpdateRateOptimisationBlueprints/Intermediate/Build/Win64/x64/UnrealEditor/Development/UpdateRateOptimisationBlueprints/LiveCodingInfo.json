@@ -4,6 +4,7 @@
 		"Module.UpdateRateOptimisationBlueprints.cpp.obj": [
 			"UpdateRateOptimisationBlueprints.init.gen.cpp.obj",
 			"UpdateRateOptimisationBlueprintsBPLibrary.gen.cpp.obj",
+			"PerModuleInline.gen.cpp.obj",
 			"UpdateRateOptimisationBlueprints.cpp.obj",
 			"UpdateRateOptimisationBlueprintsBPLibrary.cpp.obj"
 		]
