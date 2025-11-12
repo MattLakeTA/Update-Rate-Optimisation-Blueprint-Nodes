@@ -1,0 +1,13 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-UpdateRateOptimisationBlueprints.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\Matt\Documents\Unreal Projects\FourTwoSix\Intermediate\Build\Win64\FourTwoSixEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Users\Matt\Documents\Unreal Projects\FourTwoSix\Plugins\UpdateRateOptimisationBlueprints\Intermediate\Build\Win64\UE4Editor\Development\UpdateRateOptimisationBlueprints\Module.UpdateRateOptimisationBlueprints.cpp.obj"
+"C:\Users\Matt\Documents\Unreal Projects\FourTwoSix\Plugins\UpdateRateOptimisationBlueprints\Intermediate\Build\Win64\UE4Editor\Development\UpdateRateOptimisationBlueprints\Module.UpdateRateOptimisationBlueprints.gen.cpp.obj"
+"C:\Users\Matt\Documents\Unreal Projects\FourTwoSix\Plugins\UpdateRateOptimisationBlueprints\Intermediate\Build\Win64\UE4Editor\Development\UpdateRateOptimisationBlueprints\Default.rc2.res"
+/OUT:"C:\Users\Matt\Documents\Unreal Projects\FourTwoSix\Plugins\UpdateRateOptimisationBlueprints\Intermediate\Build\Win64\UE4Editor\Development\UpdateRateOptimisationBlueprints\UE4Editor-UpdateRateOptimisationBlueprints.lib"

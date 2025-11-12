@@ -15,6 +15,10 @@ void EmptyLinkFunctionForGeneratedCodeUpdateRateOptimisationBlueprintsBPLibrary(
 // Cross Module References
 	UPDATERATEOPTIMISATIONBLUEPRINTS_API UEnum* Z_Construct_UEnum_UpdateRateOptimisationBlueprints_EUpdateRateOptimisationMode();
 	UPackage* Z_Construct_UPackage__Script_UpdateRateOptimisationBlueprints();
+	UPDATERATEOPTIMISATIONBLUEPRINTS_API UScriptStruct* Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct();
+	UPDATERATEOPTIMISATIONBLUEPRINTS_API UClass* Z_Construct_UClass_UUpdateRateOptimisationDataAsset_NoRegister();
+	UPDATERATEOPTIMISATIONBLUEPRINTS_API UClass* Z_Construct_UClass_UUpdateRateOptimisationDataAsset();
+	ENGINE_API UClass* Z_Construct_UClass_UPrimaryDataAsset();
 	UPDATERATEOPTIMISATIONBLUEPRINTS_API UClass* Z_Construct_UClass_UUpdateRateOptimisationBlueprintsBPLibrary_NoRegister();
 	UPDATERATEOPTIMISATIONBLUEPRINTS_API UClass* Z_Construct_UClass_UUpdateRateOptimisationBlueprintsBPLibrary();
 	ENGINE_API UClass* Z_Construct_UClass_UBlueprintFunctionLibrary();
@@ -76,6 +80,255 @@ void EmptyLinkFunctionForGeneratedCodeUpdateRateOptimisationBlueprintsBPLibrary(
 		}
 		return ReturnEnum;
 	}
+class UScriptStruct* FUpdateRateOptimisationStruct::StaticStruct()
+{
+	static class UScriptStruct* Singleton = NULL;
+	if (!Singleton)
+	{
+		extern UPDATERATEOPTIMISATIONBLUEPRINTS_API uint32 Get_Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct, Z_Construct_UPackage__Script_UpdateRateOptimisationBlueprints(), TEXT("UpdateRateOptimisationStruct"), sizeof(FUpdateRateOptimisationStruct), Get_Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Hash());
+	}
+	return Singleton;
+}
+template<> UPDATERATEOPTIMISATIONBLUEPRINTS_API UScriptStruct* StaticStruct<FUpdateRateOptimisationStruct>()
+{
+	return FUpdateRateOptimisationStruct::StaticStruct();
+}
+static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FUpdateRateOptimisationStruct(FUpdateRateOptimisationStruct::StaticStruct, TEXT("/Script/UpdateRateOptimisationBlueprints"), TEXT("UpdateRateOptimisationStruct"), false, nullptr, nullptr);
+static struct FScriptStruct_UpdateRateOptimisationBlueprints_StaticRegisterNativesFUpdateRateOptimisationStruct
+{
+	FScriptStruct_UpdateRateOptimisationBlueprints_StaticRegisterNativesFUpdateRateOptimisationStruct()
+	{
+		UScriptStruct::DeferCppStructOps<FUpdateRateOptimisationStruct>(FName(TEXT("UpdateRateOptimisationStruct")));
+	}
+} ScriptStruct_UpdateRateOptimisationBlueprints_StaticRegisterNativesFUpdateRateOptimisationStruct;
+	struct Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[];
+#endif
+		static void* NewStructOps();
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_UpdateRateOptimisationMode_Underlying;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_UpdateRateOptimisationMode_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_UpdateRateOptimisationMode;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_VisibleDistanceFactorThesholds_Inner;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_VisibleDistanceFactorThesholds_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_VisibleDistanceFactorThesholds;
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_LODToFrameSkipArray_Inner;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_LODToFrameSkipArray_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_LODToFrameSkipArray;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bSetInterpolateSkippedFrames_MetaData[];
+#endif
+		static void NewProp_bSetInterpolateSkippedFrames_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bSetInterpolateSkippedFrames;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MaxEvalRateForInterpolation_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_MaxEvalRateForInterpolation;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BaseNonRenderedUpdateRate_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_BaseNonRenderedUpdateRate;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const UE4CodeGen_Private::FStructParams ReturnStructParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::Struct_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
+		{ "Category", "Update Rate Optimisation Blueprints" },
+		{ "ModuleRelativePath", "Public/UpdateRateOptimisationBlueprintsBPLibrary.h" },
+	};
+#endif
+	void* Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::NewStructOps()
+	{
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FUpdateRateOptimisationStruct>();
+	}
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::NewProp_UpdateRateOptimisationMode_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::NewProp_UpdateRateOptimisationMode_MetaData[] = {
+		{ "Category", "UpdateRateOptimisationStruct" },
+		{ "Comment", "/*Determines the update rate optimisation method.\n\x09Visible Distance Factor Threshold will use the screen ratio, while LOD To Frame Skip Map will utilise the LODs to change the optimisation settings.*/" },
+		{ "ModuleRelativePath", "Public/UpdateRateOptimisationBlueprintsBPLibrary.h" },
+		{ "ToolTip", "Determines the update rate optimisation method.\n       Visible Distance Factor Threshold will use the screen ratio, while LOD To Frame Skip Map will utilise the LODs to change the optimisation settings." },
+	};
+#endif
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::NewProp_UpdateRateOptimisationMode = { "UpdateRateOptimisationMode", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FUpdateRateOptimisationStruct, UpdateRateOptimisationMode), Z_Construct_UEnum_UpdateRateOptimisationBlueprints_EUpdateRateOptimisationMode, METADATA_PARAMS(Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::NewProp_UpdateRateOptimisationMode_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::NewProp_UpdateRateOptimisationMode_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::NewProp_VisibleDistanceFactorThesholds_Inner = { "VisibleDistanceFactorThesholds", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::NewProp_VisibleDistanceFactorThesholds_MetaData[] = {
+		{ "Category", "UpdateRateOptimisationStruct" },
+		{ "Comment", "/*Set the visible threshold distances that determine the update rate changes when rendered.\n\x09""0 frame skip, MaxDistanceFactor > 0.4f. 1 frame skip, MaxDistanceFactor > 0.2f.\n\x09Only used when UpdateRateOptimisationMode is set to VisibleDistanceFactor*/" },
+		{ "ModuleRelativePath", "Public/UpdateRateOptimisationBlueprintsBPLibrary.h" },
+		{ "ToolTip", "Set the visible threshold distances that determine the update rate changes when rendered.\n       0 frame skip, MaxDistanceFactor > 0.4f. 1 frame skip, MaxDistanceFactor > 0.2f.\n       Only used when UpdateRateOptimisationMode is set to VisibleDistanceFactor" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::NewProp_VisibleDistanceFactorThesholds = { "VisibleDistanceFactorThesholds", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FUpdateRateOptimisationStruct, VisibleDistanceFactorThesholds), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::NewProp_VisibleDistanceFactorThesholds_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::NewProp_VisibleDistanceFactorThesholds_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::NewProp_LODToFrameSkipArray_Inner = { "LODToFrameSkipArray", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::NewProp_LODToFrameSkipArray_MetaData[] = {
+		{ "Category", "UpdateRateOptimisationStruct" },
+		{ "Comment", "/*Sets the LOD To Frame Skip map for URO - Array entry index is the LOD index, the value is the skip rate.\n\x09Only used when UpdateRateOptimisationMode is set to LODToFrameSkipArray*/" },
+		{ "ModuleRelativePath", "Public/UpdateRateOptimisationBlueprintsBPLibrary.h" },
+		{ "ToolTip", "Sets the LOD To Frame Skip map for URO - Array entry index is the LOD index, the value is the skip rate.\n       Only used when UpdateRateOptimisationMode is set to LODToFrameSkipArray" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::NewProp_LODToFrameSkipArray = { "LODToFrameSkipArray", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FUpdateRateOptimisationStruct, LODToFrameSkipArray), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::NewProp_LODToFrameSkipArray_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::NewProp_LODToFrameSkipArray_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::NewProp_bSetInterpolateSkippedFrames_MetaData[] = {
+		{ "Category", "UpdateRateOptimisationStruct" },
+		{ "Comment", "/*Whether or not to disable interpolation between frames that have been skipped.*/" },
+		{ "ModuleRelativePath", "Public/UpdateRateOptimisationBlueprintsBPLibrary.h" },
+		{ "ToolTip", "Whether or not to disable interpolation between frames that have been skipped." },
+	};
+#endif
+	void Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::NewProp_bSetInterpolateSkippedFrames_SetBit(void* Obj)
+	{
+		((FUpdateRateOptimisationStruct*)Obj)->bSetInterpolateSkippedFrames = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::NewProp_bSetInterpolateSkippedFrames = { "bSetInterpolateSkippedFrames", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FUpdateRateOptimisationStruct), &Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::NewProp_bSetInterpolateSkippedFrames_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::NewProp_bSetInterpolateSkippedFrames_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::NewProp_bSetInterpolateSkippedFrames_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::NewProp_MaxEvalRateForInterpolation_MetaData[] = {
+		{ "Category", "UpdateRateOptimisationStruct" },
+		{ "Comment", "/*Sets the threshold value to disable animation interpolation. For example, below 15 will stop interpolating.*/" },
+		{ "ModuleRelativePath", "Public/UpdateRateOptimisationBlueprintsBPLibrary.h" },
+		{ "ToolTip", "Sets the threshold value to disable animation interpolation. For example, below 15 will stop interpolating." },
+	};
+#endif
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::NewProp_MaxEvalRateForInterpolation = { "MaxEvalRateForInterpolation", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FUpdateRateOptimisationStruct, MaxEvalRateForInterpolation), METADATA_PARAMS(Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::NewProp_MaxEvalRateForInterpolation_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::NewProp_MaxEvalRateForInterpolation_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::NewProp_BaseNonRenderedUpdateRate_MetaData[] = {
+		{ "Category", "UpdateRateOptimisationStruct" },
+		{ "Comment", "/*Sets the rate of animation evaluation when non rendered (off screen / dedicated server). A value of 4 means 4 frames will be skipped then the 5th will update.*/" },
+		{ "ModuleRelativePath", "Public/UpdateRateOptimisationBlueprintsBPLibrary.h" },
+		{ "ToolTip", "Sets the rate of animation evaluation when non rendered (off screen / dedicated server). A value of 4 means 4 frames will be skipped then the 5th will update." },
+	};
+#endif
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::NewProp_BaseNonRenderedUpdateRate = { "BaseNonRenderedUpdateRate", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FUpdateRateOptimisationStruct, BaseNonRenderedUpdateRate), METADATA_PARAMS(Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::NewProp_BaseNonRenderedUpdateRate_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::NewProp_BaseNonRenderedUpdateRate_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::NewProp_UpdateRateOptimisationMode_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::NewProp_UpdateRateOptimisationMode,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::NewProp_VisibleDistanceFactorThesholds_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::NewProp_VisibleDistanceFactorThesholds,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::NewProp_LODToFrameSkipArray_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::NewProp_LODToFrameSkipArray,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::NewProp_bSetInterpolateSkippedFrames,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::NewProp_MaxEvalRateForInterpolation,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::NewProp_BaseNonRenderedUpdateRate,
+	};
+	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::ReturnStructParams = {
+		(UObject* (*)())Z_Construct_UPackage__Script_UpdateRateOptimisationBlueprints,
+		nullptr,
+		&NewStructOps,
+		"UpdateRateOptimisationStruct",
+		sizeof(FUpdateRateOptimisationStruct),
+		alignof(FUpdateRateOptimisationStruct),
+		Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::PropPointers,
+		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000001),
+		METADATA_PARAMS(Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::Struct_MetaDataParams))
+	};
+	UScriptStruct* Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct()
+	{
+#if WITH_HOT_RELOAD
+		extern uint32 Get_Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Hash();
+		UPackage* Outer = Z_Construct_UPackage__Script_UpdateRateOptimisationBlueprints();
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("UpdateRateOptimisationStruct"), sizeof(FUpdateRateOptimisationStruct), Get_Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Hash(), false);
+#else
+		static UScriptStruct* ReturnStruct = nullptr;
+#endif
+		if (!ReturnStruct)
+		{
+			UE4CodeGen_Private::ConstructUScriptStruct(ReturnStruct, Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics::ReturnStructParams);
+		}
+		return ReturnStruct;
+	}
+	uint32 Get_Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Hash() { return 4048162457U; }
+	void UUpdateRateOptimisationDataAsset::StaticRegisterNativesUUpdateRateOptimisationDataAsset()
+	{
+	}
+	UClass* Z_Construct_UClass_UUpdateRateOptimisationDataAsset_NoRegister()
+	{
+		return UUpdateRateOptimisationDataAsset::StaticClass();
+	}
+	struct Z_Construct_UClass_UUpdateRateOptimisationDataAsset_Statics
+	{
+		static UObject* (*const DependentSingletons[])();
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
+#endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_UpdateRateOptimisationStruct_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_UpdateRateOptimisationStruct;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
+		static const UE4CodeGen_Private::FClassParams ClassParams;
+	};
+	UObject* (*const Z_Construct_UClass_UUpdateRateOptimisationDataAsset_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_UPrimaryDataAsset,
+		(UObject* (*)())Z_Construct_UPackage__Script_UpdateRateOptimisationBlueprints,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UUpdateRateOptimisationDataAsset_Statics::Class_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
+		{ "Comment", "/// This is the data asset that stores the information to build any actor/prop/etc.\n" },
+		{ "IncludePath", "UpdateRateOptimisationBlueprintsBPLibrary.h" },
+		{ "ModuleRelativePath", "Public/UpdateRateOptimisationBlueprintsBPLibrary.h" },
+		{ "ToolTip", "This is the data asset that stores the information to build any actor/prop/etc." },
+	};
+#endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UUpdateRateOptimisationDataAsset_Statics::NewProp_UpdateRateOptimisationStruct_MetaData[] = {
+		{ "Category", "UpdateRateOptimisationDataAsset" },
+		{ "ModuleRelativePath", "Public/UpdateRateOptimisationBlueprintsBPLibrary.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UUpdateRateOptimisationDataAsset_Statics::NewProp_UpdateRateOptimisationStruct = { "UpdateRateOptimisationStruct", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UUpdateRateOptimisationDataAsset, UpdateRateOptimisationStruct), Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct, METADATA_PARAMS(Z_Construct_UClass_UUpdateRateOptimisationDataAsset_Statics::NewProp_UpdateRateOptimisationStruct_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UUpdateRateOptimisationDataAsset_Statics::NewProp_UpdateRateOptimisationStruct_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UUpdateRateOptimisationDataAsset_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UUpdateRateOptimisationDataAsset_Statics::NewProp_UpdateRateOptimisationStruct,
+	};
+	const FCppClassTypeInfoStatic Z_Construct_UClass_UUpdateRateOptimisationDataAsset_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<UUpdateRateOptimisationDataAsset>::IsAbstract,
+	};
+	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UUpdateRateOptimisationDataAsset_Statics::ClassParams = {
+		&UUpdateRateOptimisationDataAsset::StaticClass,
+		nullptr,
+		&StaticCppClassTypeInfo,
+		DependentSingletons,
+		nullptr,
+		Z_Construct_UClass_UUpdateRateOptimisationDataAsset_Statics::PropPointers,
+		nullptr,
+		UE_ARRAY_COUNT(DependentSingletons),
+		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_UUpdateRateOptimisationDataAsset_Statics::PropPointers),
+		0,
+		0x000000A0u,
+		METADATA_PARAMS(Z_Construct_UClass_UUpdateRateOptimisationDataAsset_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UUpdateRateOptimisationDataAsset_Statics::Class_MetaDataParams))
+	};
+	UClass* Z_Construct_UClass_UUpdateRateOptimisationDataAsset()
+	{
+		static UClass* OuterClass = nullptr;
+		if (!OuterClass)
+		{
+			UE4CodeGen_Private::ConstructUClass(OuterClass, Z_Construct_UClass_UUpdateRateOptimisationDataAsset_Statics::ClassParams);
+		}
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(UUpdateRateOptimisationDataAsset, 2958626735);
+	template<> UPDATERATEOPTIMISATIONBLUEPRINTS_API UClass* StaticClass<UUpdateRateOptimisationDataAsset>()
+	{
+		return UUpdateRateOptimisationDataAsset::StaticClass();
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UUpdateRateOptimisationDataAsset(Z_Construct_UClass_UUpdateRateOptimisationDataAsset, &UUpdateRateOptimisationDataAsset::StaticClass, TEXT("/Script/UpdateRateOptimisationBlueprints"), TEXT("UUpdateRateOptimisationDataAsset"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UUpdateRateOptimisationDataAsset);
 	DEFINE_FUNCTION(UUpdateRateOptimisationBlueprintsBPLibrary::execGetCurrentUpdateRate)
 	{
 		P_GET_OBJECT(USkinnedMeshComponent,Z_Param_SkinnedMeshComponent);
@@ -263,6 +516,26 @@ void EmptyLinkFunctionForGeneratedCodeUpdateRateOptimisationBlueprintsBPLibrary(
 		UUpdateRateOptimisationBlueprintsBPLibrary::SetUpdateRateOptimisationMode(Z_Param_SkinnedMeshComponent,EUpdateRateOptimisationMode(Z_Param_UpdateRateOptimisationMode));
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(UUpdateRateOptimisationBlueprintsBPLibrary::execSetUpdateRateOptimisationByStruct)
+	{
+		P_GET_OBJECT(USkinnedMeshComponent,Z_Param_SkinnedMeshComponent);
+		P_GET_UBOOL(Z_Param_bEnable);
+		P_GET_STRUCT(FUpdateRateOptimisationStruct,Z_Param_UpdateRateOptimisationSettings);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		UUpdateRateOptimisationBlueprintsBPLibrary::SetUpdateRateOptimisationByStruct(Z_Param_SkinnedMeshComponent,Z_Param_bEnable,Z_Param_UpdateRateOptimisationSettings);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UUpdateRateOptimisationBlueprintsBPLibrary::execSetUpdateRateOptimisationByDataAsset)
+	{
+		P_GET_OBJECT(USkinnedMeshComponent,Z_Param_SkinnedMeshComponent);
+		P_GET_UBOOL(Z_Param_bEnable);
+		P_GET_OBJECT(UUpdateRateOptimisationDataAsset,Z_Param_UpdateRateOptimisationDataAsset);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		UUpdateRateOptimisationBlueprintsBPLibrary::SetUpdateRateOptimisationByDataAsset(Z_Param_SkinnedMeshComponent,Z_Param_bEnable,Z_Param_UpdateRateOptimisationDataAsset);
+		P_NATIVE_END;
+	}
 	void UUpdateRateOptimisationBlueprintsBPLibrary::StaticRegisterNativesUUpdateRateOptimisationBlueprintsBPLibrary()
 	{
 		UClass* Class = UUpdateRateOptimisationBlueprintsBPLibrary::StaticClass();
@@ -287,6 +560,8 @@ void EmptyLinkFunctionForGeneratedCodeUpdateRateOptimisationBlueprintsBPLibrary(
 			{ "SetLODToFrameSkipIndex", &UUpdateRateOptimisationBlueprintsBPLibrary::execSetLODToFrameSkipIndex },
 			{ "SetLODToFrameSkipMap", &UUpdateRateOptimisationBlueprintsBPLibrary::execSetLODToFrameSkipMap },
 			{ "SetMaxEvalRateForInterpolation", &UUpdateRateOptimisationBlueprintsBPLibrary::execSetMaxEvalRateForInterpolation },
+			{ "SetUpdateRateOptimisationByDataAsset", &UUpdateRateOptimisationBlueprintsBPLibrary::execSetUpdateRateOptimisationByDataAsset },
+			{ "SetUpdateRateOptimisationByStruct", &UUpdateRateOptimisationBlueprintsBPLibrary::execSetUpdateRateOptimisationByStruct },
 			{ "SetUpdateRateOptimisationMode", &UUpdateRateOptimisationBlueprintsBPLibrary::execSetUpdateRateOptimisationMode },
 			{ "SetVisibleDistanceFactorThresholds", &UUpdateRateOptimisationBlueprintsBPLibrary::execSetVisibleDistanceFactorThresholds },
 		};
@@ -1311,6 +1586,120 @@ void EmptyLinkFunctionForGeneratedCodeUpdateRateOptimisationBlueprintsBPLibrary(
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByDataAsset_Statics
+	{
+		struct UpdateRateOptimisationBlueprintsBPLibrary_eventSetUpdateRateOptimisationByDataAsset_Parms
+		{
+			USkinnedMeshComponent* SkinnedMeshComponent;
+			bool bEnable;
+			UUpdateRateOptimisationDataAsset* UpdateRateOptimisationDataAsset;
+		};
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SkinnedMeshComponent_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_SkinnedMeshComponent;
+		static void NewProp_bEnable_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bEnable;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_UpdateRateOptimisationDataAsset;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByDataAsset_Statics::NewProp_SkinnedMeshComponent_MetaData[] = {
+		{ "EditInline", "true" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByDataAsset_Statics::NewProp_SkinnedMeshComponent = { "SkinnedMeshComponent", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UpdateRateOptimisationBlueprintsBPLibrary_eventSetUpdateRateOptimisationByDataAsset_Parms, SkinnedMeshComponent), Z_Construct_UClass_USkinnedMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByDataAsset_Statics::NewProp_SkinnedMeshComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByDataAsset_Statics::NewProp_SkinnedMeshComponent_MetaData)) };
+	void Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByDataAsset_Statics::NewProp_bEnable_SetBit(void* Obj)
+	{
+		((UpdateRateOptimisationBlueprintsBPLibrary_eventSetUpdateRateOptimisationByDataAsset_Parms*)Obj)->bEnable = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByDataAsset_Statics::NewProp_bEnable = { "bEnable", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UpdateRateOptimisationBlueprintsBPLibrary_eventSetUpdateRateOptimisationByDataAsset_Parms), &Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByDataAsset_Statics::NewProp_bEnable_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByDataAsset_Statics::NewProp_UpdateRateOptimisationDataAsset = { "UpdateRateOptimisationDataAsset", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UpdateRateOptimisationBlueprintsBPLibrary_eventSetUpdateRateOptimisationByDataAsset_Parms, UpdateRateOptimisationDataAsset), Z_Construct_UClass_UUpdateRateOptimisationDataAsset_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByDataAsset_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByDataAsset_Statics::NewProp_SkinnedMeshComponent,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByDataAsset_Statics::NewProp_bEnable,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByDataAsset_Statics::NewProp_UpdateRateOptimisationDataAsset,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByDataAsset_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Update Rate Optimisations" },
+		{ "Comment", "/*Determines the update rate optimisation method via a struct that contains all the relevant information, rather than applying with individual nodes.\n\x09Visible Distance Factor Threshold will use the screen ratio, while LOD To Frame Skip Map will utilise the LODs to change the optimisation settings.*/" },
+		{ "Keywords", "URO Skeletal Mesh" },
+		{ "ModuleRelativePath", "Public/UpdateRateOptimisationBlueprintsBPLibrary.h" },
+		{ "ToolTip", "Determines the update rate optimisation method via a struct that contains all the relevant information, rather than applying with individual nodes.\n       Visible Distance Factor Threshold will use the screen ratio, while LOD To Frame Skip Map will utilise the LODs to change the optimisation settings." },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByDataAsset_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UUpdateRateOptimisationBlueprintsBPLibrary, nullptr, "SetUpdateRateOptimisationByDataAsset", nullptr, nullptr, sizeof(UpdateRateOptimisationBlueprintsBPLibrary_eventSetUpdateRateOptimisationByDataAsset_Parms), Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByDataAsset_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByDataAsset_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByDataAsset_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByDataAsset_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByDataAsset()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByDataAsset_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByStruct_Statics
+	{
+		struct UpdateRateOptimisationBlueprintsBPLibrary_eventSetUpdateRateOptimisationByStruct_Parms
+		{
+			USkinnedMeshComponent* SkinnedMeshComponent;
+			bool bEnable;
+			FUpdateRateOptimisationStruct UpdateRateOptimisationSettings;
+		};
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SkinnedMeshComponent_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_SkinnedMeshComponent;
+		static void NewProp_bEnable_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bEnable;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_UpdateRateOptimisationSettings;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByStruct_Statics::NewProp_SkinnedMeshComponent_MetaData[] = {
+		{ "EditInline", "true" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByStruct_Statics::NewProp_SkinnedMeshComponent = { "SkinnedMeshComponent", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UpdateRateOptimisationBlueprintsBPLibrary_eventSetUpdateRateOptimisationByStruct_Parms, SkinnedMeshComponent), Z_Construct_UClass_USkinnedMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByStruct_Statics::NewProp_SkinnedMeshComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByStruct_Statics::NewProp_SkinnedMeshComponent_MetaData)) };
+	void Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByStruct_Statics::NewProp_bEnable_SetBit(void* Obj)
+	{
+		((UpdateRateOptimisationBlueprintsBPLibrary_eventSetUpdateRateOptimisationByStruct_Parms*)Obj)->bEnable = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByStruct_Statics::NewProp_bEnable = { "bEnable", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UpdateRateOptimisationBlueprintsBPLibrary_eventSetUpdateRateOptimisationByStruct_Parms), &Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByStruct_Statics::NewProp_bEnable_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByStruct_Statics::NewProp_UpdateRateOptimisationSettings = { "UpdateRateOptimisationSettings", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UpdateRateOptimisationBlueprintsBPLibrary_eventSetUpdateRateOptimisationByStruct_Parms, UpdateRateOptimisationSettings), Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByStruct_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByStruct_Statics::NewProp_SkinnedMeshComponent,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByStruct_Statics::NewProp_bEnable,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByStruct_Statics::NewProp_UpdateRateOptimisationSettings,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByStruct_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Update Rate Optimisations" },
+		{ "Comment", "/*Determines the update rate optimisation method via a struct that contains all the relevant information, rather than applying with individual nodes.\n\x09Visible Distance Factor Threshold will use the screen ratio, while LOD To Frame Skip Map will utilise the LODs to change the optimisation settings.*/" },
+		{ "Keywords", "URO Skeletal Mesh" },
+		{ "ModuleRelativePath", "Public/UpdateRateOptimisationBlueprintsBPLibrary.h" },
+		{ "ToolTip", "Determines the update rate optimisation method via a struct that contains all the relevant information, rather than applying with individual nodes.\n       Visible Distance Factor Threshold will use the screen ratio, while LOD To Frame Skip Map will utilise the LODs to change the optimisation settings." },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByStruct_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UUpdateRateOptimisationBlueprintsBPLibrary, nullptr, "SetUpdateRateOptimisationByStruct", nullptr, nullptr, sizeof(UpdateRateOptimisationBlueprintsBPLibrary_eventSetUpdateRateOptimisationByStruct_Parms), Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByStruct_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByStruct_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByStruct_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByStruct_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByStruct()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByStruct_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationMode_Statics
 	{
 		struct UpdateRateOptimisationBlueprintsBPLibrary_eventSetUpdateRateOptimisationMode_Parms
@@ -1460,6 +1849,8 @@ void EmptyLinkFunctionForGeneratedCodeUpdateRateOptimisationBlueprintsBPLibrary(
 		{ &Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetLODToFrameSkipIndex, "SetLODToFrameSkipIndex" }, // 147539445
 		{ &Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetLODToFrameSkipMap, "SetLODToFrameSkipMap" }, // 3938711547
 		{ &Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetMaxEvalRateForInterpolation, "SetMaxEvalRateForInterpolation" }, // 2394883439
+		{ &Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByDataAsset, "SetUpdateRateOptimisationByDataAsset" }, // 2761380613
+		{ &Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationByStruct, "SetUpdateRateOptimisationByStruct" }, // 2824864592
 		{ &Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetUpdateRateOptimisationMode, "SetUpdateRateOptimisationMode" }, // 208660668
 		{ &Z_Construct_UFunction_UUpdateRateOptimisationBlueprintsBPLibrary_SetVisibleDistanceFactorThresholds, "SetVisibleDistanceFactorThresholds" }, // 1989817583
 	};
@@ -1497,7 +1888,7 @@ void EmptyLinkFunctionForGeneratedCodeUpdateRateOptimisationBlueprintsBPLibrary(
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UUpdateRateOptimisationBlueprintsBPLibrary, 2597479686);
+	IMPLEMENT_CLASS(UUpdateRateOptimisationBlueprintsBPLibrary, 449159777);
 	template<> UPDATERATEOPTIMISATIONBLUEPRINTS_API UClass* StaticClass<UUpdateRateOptimisationBlueprintsBPLibrary>()
 	{
 		return UUpdateRateOptimisationBlueprintsBPLibrary::StaticClass();

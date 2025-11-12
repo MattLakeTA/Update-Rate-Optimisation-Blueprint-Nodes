@@ -49,8 +49,8 @@
 #define NDEBUG 1
 #define UE_BUILD_DEVELOPMENT 1
 #define UE_IS_ENGINE_MODULE 0
-#define UE_PROJECT_NAME UE427
-#define UE_TARGET_NAME UE427Editor
+#define UE_PROJECT_NAME FourTwoSeven
+#define UE_TARGET_NAME FourTwoSevenEditor
 #define UE_MODULE_NAME "UpdateRateOptimisationBlueprints"
 #define UE_PLUGIN_NAME "UpdateRateOptimisationBlueprints"
 #define IMPLEMENT_ENCRYPTION_KEY_REGISTRATION() 

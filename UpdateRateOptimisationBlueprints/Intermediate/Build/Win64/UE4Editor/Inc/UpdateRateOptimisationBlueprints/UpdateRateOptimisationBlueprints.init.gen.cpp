@@ -21,8 +21,8 @@ void EmptyLinkFunctionForGeneratedCodeUpdateRateOptimisationBlueprints_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x961799B6,
-				0x14B6FCE8,
+				0xFF5AD0AF,
+				0xA1DCFAF3,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);
