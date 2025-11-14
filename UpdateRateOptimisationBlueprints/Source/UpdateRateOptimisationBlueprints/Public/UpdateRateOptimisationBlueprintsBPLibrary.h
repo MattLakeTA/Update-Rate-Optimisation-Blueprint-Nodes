@@ -5,11 +5,14 @@
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "Components/SkinnedMeshComponent.h"
+#include "Engine/DataAsset.h"
+
 #include "UpdateRateOptimisationBlueprintsBPLibrary.generated.h"
 
 DECLARE_LOG_CATEGORY_EXTERN(LogUpdateRateOptimisations, Log, All);
 
-UENUM(BlueprintType)
+/*ENUM Switcher for the two modes of Update Rate Optimisations.*/
+UENUM(BlueprintType, Category = "Update Rate Optimisations")
 enum class EUpdateRateOptimisationMode : uint8
 {
 	None,
@@ -17,7 +20,8 @@ enum class EUpdateRateOptimisationMode : uint8
 	LODToFrameSkipMap
 };
 
-USTRUCT(BlueprintType, Category = "Update Rate Optimisation Blueprints")
+/*Struct that defines all the parameters for Update Rate Optimisations*/
+USTRUCT(BlueprintType, Category = "Update Rate Optimisations")
 struct FUpdateRateOptimisationStruct
 {
 	GENERATED_BODY()
@@ -25,30 +29,30 @@ struct FUpdateRateOptimisationStruct
 public:
 	/*Determines the update rate optimisation method.
 	Visible Distance Factor Threshold will use the screen ratio, while LOD To Frame Skip Map will utilise the LODs to change the optimisation settings.*/
-	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Update Rate Optimisations")
 	EUpdateRateOptimisationMode UpdateRateOptimisationMode;
 
 	/*Set the visible threshold distances that determine the update rate changes when rendered.
 	0 frame skip, MaxDistanceFactor > 0.4f. 1 frame skip, MaxDistanceFactor > 0.2f.
 	Only used when UpdateRateOptimisationMode is set to VisibleDistanceFactor*/
-	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Update Rate Optimisations")
 	TArray<float> VisibleDistanceFactorThesholds;
 
 	/*Sets the LOD To Frame Skip map for URO - Array entry index is the LOD index, the value is the skip rate.
 	Only used when UpdateRateOptimisationMode is set to LODToFrameSkipArray*/
-	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Update Rate Optimisations")
 	TArray<int32> LODToFrameSkipArray;
 
 	/*Whether or not to disable interpolation between frames that have been skipped.*/
-	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Update Rate Optimisations")
 	bool bSetInterpolateSkippedFrames;
 
 	/*Sets the threshold value to disable animation interpolation. For example, below 15 will stop interpolating.*/
-	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Update Rate Optimisations")
 	int MaxEvalRateForInterpolation;
 
 	/*Sets the rate of animation evaluation when non rendered (off screen / dedicated server). A value of 4 means 4 frames will be skipped then the 5th will update.*/
-	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Update Rate Optimisations")
 	int BaseNonRenderedUpdateRate;
 
 	// constructor
@@ -63,14 +67,14 @@ public:
 	}
 };
 
-/// This is the data asset that stores the information to build any actor/prop/etc.
-UCLASS(BlueprintType)
+/*Data Asset that can hold the URO Struct for easy portability.*/
+UCLASS(BlueprintType, Category = "Update Rate Optimisations")
 class UUpdateRateOptimisationDataAsset : public UPrimaryDataAsset
 {
 	GENERATED_BODY()
 
 public:
-	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Update Rate Optimisations")
 	FUpdateRateOptimisationStruct UpdateRateOptimisationStruct;
 };
 
@@ -182,5 +186,6 @@ class UUpdateRateOptimisationBlueprintsBPLibrary : public UBlueprintFunctionLibr
 	static float GetCurrentUpdateRate(USkinnedMeshComponent* SkinnedMeshComponent);
 
 private:
+	/*Simple print and log string message for debugging.*/
 	static void PrintAndLogMessage(const FString& Message);
 };
