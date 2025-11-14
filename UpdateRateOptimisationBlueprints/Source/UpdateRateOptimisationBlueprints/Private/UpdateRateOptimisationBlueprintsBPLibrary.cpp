@@ -3,6 +3,7 @@
 #include "UpdateRateOptimisationBlueprintsBPLibrary.h"
 #include "UpdateRateOptimisationBlueprints.h"
 #include "Components/SkinnedMeshComponent.h"
+#include "Runtime/Launch/Resources/Version.h"
 #include "Engine/GameEngine.h"
 
 DEFINE_LOG_CATEGORY(LogUpdateRateOptimisations);
@@ -281,7 +282,11 @@ TArray<int32> UUpdateRateOptimisationBlueprintsBPLibrary::GetLODToFrameSkipArray
 
         if (Index >= LODToFrameSkipArray.Num())
         {
-            LODToFrameSkipArray.SetNum(Index + 1, false);
+            #if ENGINE_MAJOR_VERSION > 5 || (ENGINE_MAJOR_VERSION == 5 && ENGINE_MINOR_VERSION >= 5)
+                LODToFrameSkipArray.SetNum(Index + 1, EAllowShrinking::No);
+            #else
+                LODToFrameSkipArray.SetNum(Index + 1, false);
+            #endif
         }
 
         LODToFrameSkipArray[Index] = Value;
