@@ -24,6 +24,7 @@ public class UpdateRateOptimisationBlueprints : ModuleRules
 			new string[]
 			{
 				"Core",
+				"Engine"
 			}
 			);
 			
