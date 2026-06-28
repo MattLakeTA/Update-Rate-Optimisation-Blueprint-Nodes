@@ -3,7 +3,408 @@
     "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
     "runs": [
         {
-            "results": [],
+            "results": [
+                {
+                    "ruleId": "C4305",
+                    "message": {
+                        "text": "'initializing': truncation from 'double' to 'InElementType'\n        with\n        [\n            InElementType=float\n        ]"
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Plugins/UpdateRateOptimisationBlueprints/Intermediate/Build/Win64/x64/UnrealEditor/Development/UpdateRateOptimisationBlueprints/Module.UpdateRateOptimisationBlueprints.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Plugins/UpdateRateOptimisationBlueprints/Source/UpdateRateOptimisationBlueprints/Public/UpdateRateOptimisationBlueprintsBPLibrary.h"
+                                },
+                                "region": {
+                                    "startLine": 61,
+                                    "startColumn": 36,
+                                    "snippet": {
+                                        "text": "\t\tVisibleDistanceFactorThesholds({ 0.4, 0.3, 0.2, 0.1, 0.05, 0.04, 0.03, 0.02, 0.01, 0.005, 0.00125, 0.000625, 0.000313, 0.000156, 0.000078, 0.000039 }),"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4305",
+                    "message": {
+                        "text": "'initializing': truncation from 'double' to 'InElementType'\n        with\n        [\n            InElementType=float\n        ]"
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Plugins/UpdateRateOptimisationBlueprints/Intermediate/Build/Win64/x64/UnrealEditor/Development/UpdateRateOptimisationBlueprints/Module.UpdateRateOptimisationBlueprints.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Plugins/UpdateRateOptimisationBlueprints/Source/UpdateRateOptimisationBlueprints/Public/UpdateRateOptimisationBlueprintsBPLibrary.h"
+                                },
+                                "region": {
+                                    "startLine": 61,
+                                    "startColumn": 41,
+                                    "snippet": {
+                                        "text": "\t\tVisibleDistanceFactorThesholds({ 0.4, 0.3, 0.2, 0.1, 0.05, 0.04, 0.03, 0.02, 0.01, 0.005, 0.00125, 0.000625, 0.000313, 0.000156, 0.000078, 0.000039 }),"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4305",
+                    "message": {
+                        "text": "'initializing': truncation from 'double' to 'InElementType'\n        with\n        [\n            InElementType=float\n        ]"
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Plugins/UpdateRateOptimisationBlueprints/Intermediate/Build/Win64/x64/UnrealEditor/Development/UpdateRateOptimisationBlueprints/Module.UpdateRateOptimisationBlueprints.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Plugins/UpdateRateOptimisationBlueprints/Source/UpdateRateOptimisationBlueprints/Public/UpdateRateOptimisationBlueprintsBPLibrary.h"
+                                },
+                                "region": {
+                                    "startLine": 61,
+                                    "startColumn": 46,
+                                    "snippet": {
+                                        "text": "\t\tVisibleDistanceFactorThesholds({ 0.4, 0.3, 0.2, 0.1, 0.05, 0.04, 0.03, 0.02, 0.01, 0.005, 0.00125, 0.000625, 0.000313, 0.000156, 0.000078, 0.000039 }),"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4305",
+                    "message": {
+                        "text": "'initializing': truncation from 'double' to 'InElementType'\n        with\n        [\n            InElementType=float\n        ]"
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Plugins/UpdateRateOptimisationBlueprints/Intermediate/Build/Win64/x64/UnrealEditor/Development/UpdateRateOptimisationBlueprints/Module.UpdateRateOptimisationBlueprints.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Plugins/UpdateRateOptimisationBlueprints/Source/UpdateRateOptimisationBlueprints/Public/UpdateRateOptimisationBlueprintsBPLibrary.h"
+                                },
+                                "region": {
+                                    "startLine": 61,
+                                    "startColumn": 51,
+                                    "snippet": {
+                                        "text": "\t\tVisibleDistanceFactorThesholds({ 0.4, 0.3, 0.2, 0.1, 0.05, 0.04, 0.03, 0.02, 0.01, 0.005, 0.00125, 0.000625, 0.000313, 0.000156, 0.000078, 0.000039 }),"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4305",
+                    "message": {
+                        "text": "'initializing': truncation from 'double' to 'InElementType'\n        with\n        [\n            InElementType=float\n        ]"
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Plugins/UpdateRateOptimisationBlueprints/Intermediate/Build/Win64/x64/UnrealEditor/Development/UpdateRateOptimisationBlueprints/Module.UpdateRateOptimisationBlueprints.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Plugins/UpdateRateOptimisationBlueprints/Source/UpdateRateOptimisationBlueprints/Public/UpdateRateOptimisationBlueprintsBPLibrary.h"
+                                },
+                                "region": {
+                                    "startLine": 61,
+                                    "startColumn": 56,
+                                    "snippet": {
+                                        "text": "\t\tVisibleDistanceFactorThesholds({ 0.4, 0.3, 0.2, 0.1, 0.05, 0.04, 0.03, 0.02, 0.01, 0.005, 0.00125, 0.000625, 0.000313, 0.000156, 0.000078, 0.000039 }),"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4305",
+                    "message": {
+                        "text": "'initializing': truncation from 'double' to 'InElementType'\n        with\n        [\n            InElementType=float\n        ]"
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Plugins/UpdateRateOptimisationBlueprints/Intermediate/Build/Win64/x64/UnrealEditor/Development/UpdateRateOptimisationBlueprints/Module.UpdateRateOptimisationBlueprints.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Plugins/UpdateRateOptimisationBlueprints/Source/UpdateRateOptimisationBlueprints/Public/UpdateRateOptimisationBlueprintsBPLibrary.h"
+                                },
+                                "region": {
+                                    "startLine": 61,
+                                    "startColumn": 62,
+                                    "snippet": {
+                                        "text": "\t\tVisibleDistanceFactorThesholds({ 0.4, 0.3, 0.2, 0.1, 0.05, 0.04, 0.03, 0.02, 0.01, 0.005, 0.00125, 0.000625, 0.000313, 0.000156, 0.000078, 0.000039 }),"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4305",
+                    "message": {
+                        "text": "'initializing': truncation from 'double' to 'InElementType'\n        with\n        [\n            InElementType=float\n        ]"
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Plugins/UpdateRateOptimisationBlueprints/Intermediate/Build/Win64/x64/UnrealEditor/Development/UpdateRateOptimisationBlueprints/Module.UpdateRateOptimisationBlueprints.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Plugins/UpdateRateOptimisationBlueprints/Source/UpdateRateOptimisationBlueprints/Public/UpdateRateOptimisationBlueprintsBPLibrary.h"
+                                },
+                                "region": {
+                                    "startLine": 61,
+                                    "startColumn": 68,
+                                    "snippet": {
+                                        "text": "\t\tVisibleDistanceFactorThesholds({ 0.4, 0.3, 0.2, 0.1, 0.05, 0.04, 0.03, 0.02, 0.01, 0.005, 0.00125, 0.000625, 0.000313, 0.000156, 0.000078, 0.000039 }),"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4305",
+                    "message": {
+                        "text": "'initializing': truncation from 'double' to 'InElementType'\n        with\n        [\n            InElementType=float\n        ]"
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Plugins/UpdateRateOptimisationBlueprints/Intermediate/Build/Win64/x64/UnrealEditor/Development/UpdateRateOptimisationBlueprints/Module.UpdateRateOptimisationBlueprints.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Plugins/UpdateRateOptimisationBlueprints/Source/UpdateRateOptimisationBlueprints/Public/UpdateRateOptimisationBlueprintsBPLibrary.h"
+                                },
+                                "region": {
+                                    "startLine": 61,
+                                    "startColumn": 74,
+                                    "snippet": {
+                                        "text": "\t\tVisibleDistanceFactorThesholds({ 0.4, 0.3, 0.2, 0.1, 0.05, 0.04, 0.03, 0.02, 0.01, 0.005, 0.00125, 0.000625, 0.000313, 0.000156, 0.000078, 0.000039 }),"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4305",
+                    "message": {
+                        "text": "'initializing': truncation from 'double' to 'InElementType'\n        with\n        [\n            InElementType=float\n        ]"
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Plugins/UpdateRateOptimisationBlueprints/Intermediate/Build/Win64/x64/UnrealEditor/Development/UpdateRateOptimisationBlueprints/Module.UpdateRateOptimisationBlueprints.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Plugins/UpdateRateOptimisationBlueprints/Source/UpdateRateOptimisationBlueprints/Public/UpdateRateOptimisationBlueprintsBPLibrary.h"
+                                },
+                                "region": {
+                                    "startLine": 61,
+                                    "startColumn": 80,
+                                    "snippet": {
+                                        "text": "\t\tVisibleDistanceFactorThesholds({ 0.4, 0.3, 0.2, 0.1, 0.05, 0.04, 0.03, 0.02, 0.01, 0.005, 0.00125, 0.000625, 0.000313, 0.000156, 0.000078, 0.000039 }),"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4305",
+                    "message": {
+                        "text": "'initializing': truncation from 'double' to 'InElementType'\n        with\n        [\n            InElementType=float\n        ]"
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Plugins/UpdateRateOptimisationBlueprints/Intermediate/Build/Win64/x64/UnrealEditor/Development/UpdateRateOptimisationBlueprints/Module.UpdateRateOptimisationBlueprints.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Plugins/UpdateRateOptimisationBlueprints/Source/UpdateRateOptimisationBlueprints/Public/UpdateRateOptimisationBlueprintsBPLibrary.h"
+                                },
+                                "region": {
+                                    "startLine": 61,
+                                    "startColumn": 86,
+                                    "snippet": {
+                                        "text": "\t\tVisibleDistanceFactorThesholds({ 0.4, 0.3, 0.2, 0.1, 0.05, 0.04, 0.03, 0.02, 0.01, 0.005, 0.00125, 0.000625, 0.000313, 0.000156, 0.000078, 0.000039 }),"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4305",
+                    "message": {
+                        "text": "'initializing': truncation from 'double' to 'InElementType'\n        with\n        [\n            InElementType=float\n        ]"
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Plugins/UpdateRateOptimisationBlueprints/Intermediate/Build/Win64/x64/UnrealEditor/Development/UpdateRateOptimisationBlueprints/Module.UpdateRateOptimisationBlueprints.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Plugins/UpdateRateOptimisationBlueprints/Source/UpdateRateOptimisationBlueprints/Public/UpdateRateOptimisationBlueprintsBPLibrary.h"
+                                },
+                                "region": {
+                                    "startLine": 61,
+                                    "startColumn": 93,
+                                    "snippet": {
+                                        "text": "\t\tVisibleDistanceFactorThesholds({ 0.4, 0.3, 0.2, 0.1, 0.05, 0.04, 0.03, 0.02, 0.01, 0.005, 0.00125, 0.000625, 0.000313, 0.000156, 0.000078, 0.000039 }),"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4305",
+                    "message": {
+                        "text": "'initializing': truncation from 'double' to 'InElementType'\n        with\n        [\n            InElementType=float\n        ]"
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Plugins/UpdateRateOptimisationBlueprints/Intermediate/Build/Win64/x64/UnrealEditor/Development/UpdateRateOptimisationBlueprints/Module.UpdateRateOptimisationBlueprints.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Plugins/UpdateRateOptimisationBlueprints/Source/UpdateRateOptimisationBlueprints/Public/UpdateRateOptimisationBlueprintsBPLibrary.h"
+                                },
+                                "region": {
+                                    "startLine": 61,
+                                    "startColumn": 102,
+                                    "snippet": {
+                                        "text": "\t\tVisibleDistanceFactorThesholds({ 0.4, 0.3, 0.2, 0.1, 0.05, 0.04, 0.03, 0.02, 0.01, 0.005, 0.00125, 0.000625, 0.000313, 0.000156, 0.000078, 0.000039 }),"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4305",
+                    "message": {
+                        "text": "'initializing': truncation from 'double' to 'InElementType'\n        with\n        [\n            InElementType=float\n        ]"
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Plugins/UpdateRateOptimisationBlueprints/Intermediate/Build/Win64/x64/UnrealEditor/Development/UpdateRateOptimisationBlueprints/Module.UpdateRateOptimisationBlueprints.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Plugins/UpdateRateOptimisationBlueprints/Source/UpdateRateOptimisationBlueprints/Public/UpdateRateOptimisationBlueprintsBPLibrary.h"
+                                },
+                                "region": {
+                                    "startLine": 61,
+                                    "startColumn": 112,
+                                    "snippet": {
+                                        "text": "\t\tVisibleDistanceFactorThesholds({ 0.4, 0.3, 0.2, 0.1, 0.05, 0.04, 0.03, 0.02, 0.01, 0.005, 0.00125, 0.000625, 0.000313, 0.000156, 0.000078, 0.000039 }),"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4305",
+                    "message": {
+                        "text": "'initializing': truncation from 'double' to 'InElementType'\n        with\n        [\n            InElementType=float\n        ]"
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Plugins/UpdateRateOptimisationBlueprints/Intermediate/Build/Win64/x64/UnrealEditor/Development/UpdateRateOptimisationBlueprints/Module.UpdateRateOptimisationBlueprints.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Plugins/UpdateRateOptimisationBlueprints/Source/UpdateRateOptimisationBlueprints/Public/UpdateRateOptimisationBlueprintsBPLibrary.h"
+                                },
+                                "region": {
+                                    "startLine": 61,
+                                    "startColumn": 122,
+                                    "snippet": {
+                                        "text": "\t\tVisibleDistanceFactorThesholds({ 0.4, 0.3, 0.2, 0.1, 0.05, 0.04, 0.03, 0.02, 0.01, 0.005, 0.00125, 0.000625, 0.000313, 0.000156, 0.000078, 0.000039 }),"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4305",
+                    "message": {
+                        "text": "'initializing': truncation from 'double' to 'InElementType'\n        with\n        [\n            InElementType=float\n        ]"
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Plugins/UpdateRateOptimisationBlueprints/Intermediate/Build/Win64/x64/UnrealEditor/Development/UpdateRateOptimisationBlueprints/Module.UpdateRateOptimisationBlueprints.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Plugins/UpdateRateOptimisationBlueprints/Source/UpdateRateOptimisationBlueprints/Public/UpdateRateOptimisationBlueprintsBPLibrary.h"
+                                },
+                                "region": {
+                                    "startLine": 61,
+                                    "startColumn": 132,
+                                    "snippet": {
+                                        "text": "\t\tVisibleDistanceFactorThesholds({ 0.4, 0.3, 0.2, 0.1, 0.05, 0.04, 0.03, 0.02, 0.01, 0.005, 0.00125, 0.000625, 0.000313, 0.000156, 0.000078, 0.000039 }),"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4305",
+                    "message": {
+                        "text": "'initializing': truncation from 'double' to 'InElementType'\n        with\n        [\n            InElementType=float\n        ]"
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Plugins/UpdateRateOptimisationBlueprints/Intermediate/Build/Win64/x64/UnrealEditor/Development/UpdateRateOptimisationBlueprints/Module.UpdateRateOptimisationBlueprints.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Plugins/UpdateRateOptimisationBlueprints/Source/UpdateRateOptimisationBlueprints/Public/UpdateRateOptimisationBlueprintsBPLibrary.h"
+                                },
+                                "region": {
+                                    "startLine": 61,
+                                    "startColumn": 142,
+                                    "snippet": {
+                                        "text": "\t\tVisibleDistanceFactorThesholds({ 0.4, 0.3, 0.2, 0.1, 0.05, 0.04, 0.03, 0.02, 0.01, 0.005, 0.00125, 0.000625, 0.000313, 0.000156, 0.000078, 0.000039 }),"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            ],
             "tool": {
                 "driver": {
                     "name": "MSVC",

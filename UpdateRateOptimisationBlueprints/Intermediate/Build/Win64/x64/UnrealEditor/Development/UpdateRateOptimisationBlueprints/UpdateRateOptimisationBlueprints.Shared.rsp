@@ -1,26 +1,69 @@
+/X
+/nologo
+/Oi
+/FC
+/diagnostics:caret
+/c
+/Gw
+/Gy
+/utf-8
+/wd4819
+/DSAL_NO_ATTRIBUTE_DECLARATIONS=1
+/permissive-
+/Zc:strictStrings-
+/Zc:__cplusplus
+/Zc:inline
+/Zc:preprocessor
+/D_WINDLL
+/D_DISABLE_EXTENDED_ALIGNED_STORAGE
+/Ob2
+/d2ExtendedWarningInfo
+/Ox
+/Ot
+/GF
+/errorReport:prompt
+/EHsc
+/DPLATFORM_EXCEPTIONS_DISABLED=0
+/Z7
+/MD
+/bigobj
+/dximplicitlyinstantiatevirtualfunction-
+/fp:precise
+/Zo
+/Zp8
+/W4
+/we4456
+/we4458
+/we4459
+/wd4244
+/wd4838
+/we4668
+/we4702
+/wd4267
+/wd4100
 /I "."
-/I "C:/Users/Matt/Documents/Unreal Projects/fiveseven/Plugins/UpdateRateOptimisationBlueprints/Source/UpdateRateOptimisationBlueprints/Private"
+/I "C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Plugins/UpdateRateOptimisationBlueprints/Source/UpdateRateOptimisationBlueprints/Private"
 /I "../Intermediate/Build/Win64/UnrealEditor/Inc/CoreUObject/UHT"
 /I "../Intermediate/Build/Win64/UnrealEditor/Inc/CoreUObject/VerseVMBytecode"
 /I "Runtime/CoreUObject/Public"
 /I "Runtime/Core/Public"
 /I "Runtime/TraceLog/Public"
 /I "Runtime/AutoRTFM/Public"
-/I "../Intermediate/Build/Win64/UnrealEditor/Inc/ImageCore/UHT"
-/I "Runtime/ImageCore/Public"
 /I "Runtime/CorePreciseFP/Public"
+/I "Runtime/Json/Public"
 /I "../Intermediate/Build/Win64/UnrealEditor/Inc/Engine/UHT"
 /I "Runtime/Engine/Classes"
 /I "Runtime/Engine/Public"
 /I "../Intermediate/Build/Win64/UnrealEditor/Inc/CoreOnline/UHT"
 /I "Runtime/CoreOnline/Public"
-/I "Runtime/Json/Public"
 /I "../Intermediate/Build/Win64/UnrealEditor/Inc/FieldNotification/UHT"
 /I "Runtime/FieldNotification/Public"
 /I "../Intermediate/Build/Win64/UnrealEditor/Inc/NetCore/UHT"
 /I "Runtime/Net/Core/Classes"
 /I "Runtime/Net/Core/Public"
 /I "Runtime/Net/Common/Public"
+/I "../Intermediate/Build/Win64/UnrealEditor/Inc/ImageCore/UHT"
+/I "Runtime/ImageCore/Public"
 /I "../Intermediate/Build/Win64/UnrealEditor/Inc/JsonUtilities/UHT"
 /I "Runtime/JsonUtilities/Public"
 /I "../Intermediate/Build/Win64/UnrealEditor/Inc/SlateCore/UHT"
@@ -80,6 +123,8 @@
 /I "Runtime/GeometryCore/Public"
 /I "../Intermediate/Build/Win64/UnrealEditor/Inc/ChaosVDRuntime/UHT"
 /I "Runtime/Experimental/ChaosVisualDebugger/Public"
+/I "../Intermediate/Build/Win64/UnrealEditor/Inc/TraceBasedDebuggers/UHT"
+/I "Runtime/Experimental/TraceBasedDebuggers/Public"
 /I "../Intermediate/Build/Win64/UnrealEditor/Inc/NNE/UHT"
 /I "Runtime/NNE/Public"
 /I "Runtime/SignalProcessing/Public"
@@ -205,6 +250,17 @@
 /I "Editor/AudioEditor/Classes"
 /I "Editor/AudioEditor/Public"
 /I "ThirdParty/libSampleRate/Public"
+/I "../Intermediate/Build/Win64/UnrealEditor/Inc/DetailCustomizations/UHT"
+/I "Editor/DetailCustomizations/Public"
+/I "../Intermediate/Build/Win64/UnrealEditor/Inc/GraphEditor/UHT"
+/I "Editor/GraphEditor/Public"
+/I "../Intermediate/Build/Win64/UnrealEditor/Inc/StructViewer/UHT"
+/I "Editor/StructViewer/Public"
+/I "../Intermediate/Build/Win64/UnrealEditor/Inc/MaterialEditor/UHT"
+/I "Editor/MaterialEditor/Public"
+/I "../Intermediate/Build/Win64/UnrealEditor/Inc/Landscape/UHT"
+/I "Runtime/Landscape/Classes"
+/I "Runtime/Landscape/Public"
 /I "../Intermediate/Build/Win64/UnrealEditor/Inc/LevelEditor/UHT"
 /I "Editor/LevelEditor/Public"
 /I "Editor/CommonMenuExtensions/Public"
@@ -215,17 +271,6 @@
 /I "Editor/ViewportInteraction/Public"
 /I "../Intermediate/Build/Win64/UnrealEditor/Inc/HeadMountedDisplay/UHT"
 /I "Runtime/HeadMountedDisplay/Public"
-/I "../Intermediate/Build/Win64/UnrealEditor/Inc/Landscape/UHT"
-/I "Runtime/Landscape/Classes"
-/I "Runtime/Landscape/Public"
-/I "../Intermediate/Build/Win64/UnrealEditor/Inc/DetailCustomizations/UHT"
-/I "Editor/DetailCustomizations/Public"
-/I "../Intermediate/Build/Win64/UnrealEditor/Inc/GraphEditor/UHT"
-/I "Editor/GraphEditor/Public"
-/I "../Intermediate/Build/Win64/UnrealEditor/Inc/StructViewer/UHT"
-/I "Editor/StructViewer/Public"
-/I "../Intermediate/Build/Win64/UnrealEditor/Inc/MaterialEditor/UHT"
-/I "Editor/MaterialEditor/Public"
 /I "Runtime/NetworkFileSystem/Public"
 /I "../Intermediate/Build/Win64/UnrealEditor/Inc/UMG/UHT"
 /I "Runtime/UMG/Public"
@@ -248,11 +293,12 @@
 /I "../Intermediate/Build/Win64/UnrealEditor/Inc/ChaosSolverEngine/UHT"
 /I "Runtime/Experimental/ChaosSolverEngine/Public"
 /I "../Intermediate/Build/Win64/UnrealEditor/Inc/DataflowCore/UHT"
-/I "Runtime/Experimental/Dataflow/Core/Public"
+/I "Runtime/Dataflow/Core/Public"
 /I "../Intermediate/Build/Win64/UnrealEditor/Inc/DataflowEngine/UHT"
-/I "Runtime/Experimental/Dataflow/Engine/Public"
+/I "Runtime/Dataflow/Engine/Public"
 /I "../Intermediate/Build/Win64/UnrealEditor/Inc/DataflowSimulation/UHT"
-/I "Runtime/Experimental/Dataflow/Simulation/Public"
+/I "Runtime/Dataflow/Simulation/Public"
+/I "Runtime/Experimental/RigidPhysics/Public"
 /I "../Intermediate/Build/Win64/UnrealEditor/Inc/FieldSystemEngine/UHT"
 /I "Runtime/Experimental/FieldSystem/Source/FieldSystemEngine/Public"
 /I "../Intermediate/Build/Win64/UnrealEditor/Inc/ISMPool/UHT"
@@ -280,14 +326,17 @@
 /I "Developer/PhysicsUtilities/Public"
 /I "../Intermediate/Build/Win64/UnrealEditor/Inc/WidgetRegistration/UHT"
 /I "Developer/WidgetRegistration/Public"
+/I "../Intermediate/Build/Win64/UnrealEditor/Inc/ActorPickerMode/UHT"
 /I "Editor/ActorPickerMode/Public"
 /I "Editor/SceneDepthPickerMode/Public"
 /I "../Intermediate/Build/Win64/UnrealEditor/Inc/AnimationEditMode/UHT"
 /I "Editor/AnimationEditMode/Public"
-/I "C:/Users/Matt/Documents/Unreal Projects/fiveseven/Plugins/UpdateRateOptimisationBlueprints/Intermediate/Build/Win64/UnrealEditor/Inc/UpdateRateOptimisationBlueprints/UHT"
-/I "C:/Users/Matt/Documents/Unreal Projects/fiveseven/Plugins/UpdateRateOptimisationBlueprints/Source"
-/I "C:/Users/Matt/Documents/Unreal Projects/fiveseven/Plugins/UpdateRateOptimisationBlueprints/Source/UpdateRateOptimisationBlueprints/Public"
-/I "C:/Users/Matt/Documents/Unreal Projects/fiveseven/Intermediate/Build/Win64/x64/fivesevenEditor/Development/UnrealEd"
+/I "../Intermediate/Build/Win64/UnrealEditor/Inc/EditorInteractiveToolsFramework/UHT"
+/I "Editor/Experimental/EditorInteractiveToolsFramework/Public"
+/I "C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Plugins/UpdateRateOptimisationBlueprints/Intermediate/Build/Win64/UnrealEditor/Inc/UpdateRateOptimisationBlueprints/UHT"
+/I "C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Plugins/UpdateRateOptimisationBlueprints/Source"
+/I "C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Plugins/UpdateRateOptimisationBlueprints/Source/UpdateRateOptimisationBlueprints/Public"
+/I "C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Intermediate/Build/Win64/x64/FiveEightEGLEditor/Development/UnrealEd"
 /external:W0
 /external:I "ThirdParty/GuidelinesSupportLibrary/GSL-1144/include"
 /external:I "ThirdParty/AtomicQueue"

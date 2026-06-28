@@ -1,54 +1,13 @@
-"C:/Users/Matt/Documents/Unreal Projects/fiveseven/Plugins/UpdateRateOptimisationBlueprints/Source/UpdateRateOptimisationBlueprints/Private/UpdateRateOptimisationBlueprintsBPLibrary.cpp"
-@"C:/Users/Matt/Documents/Unreal Projects/fiveseven/Plugins/UpdateRateOptimisationBlueprints/Intermediate/Build/Win64/x64/UnrealEditor/Development/UpdateRateOptimisationBlueprints/UpdateRateOptimisationBlueprints.Shared.rsp"
-/FI"C:/Users/Matt/Documents/Unreal Projects/fiveseven/Intermediate/Build/Win64/x64/fivesevenEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_4.h"
-/FI"C:/Users/Matt/Documents/Unreal Projects/fiveseven/Plugins/UpdateRateOptimisationBlueprints/Intermediate/Build/Win64/x64/UnrealEditor/Development/UpdateRateOptimisationBlueprints/Definitions.UpdateRateOptimisationBlueprints.h"
-/Yu"C:/Users/Matt/Documents/Unreal Projects/fiveseven/Intermediate/Build/Win64/x64/fivesevenEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_4.h"
-/Fp"C:/Users/Matt/Documents/Unreal Projects/fiveseven/Intermediate/Build/Win64/x64/fivesevenEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_4.h.pch"
-/Fo"C:/Users/Matt/Documents/Unreal Projects/fiveseven/Plugins/UpdateRateOptimisationBlueprints/Intermediate/Build/Win64/x64/UnrealEditor/Development/UpdateRateOptimisationBlueprints/UpdateRateOptimisationBlueprintsBPLibrary.cpp.obj"
-/experimental:log "C:/Users/Matt/Documents/Unreal Projects/fiveseven/Plugins/UpdateRateOptimisationBlueprints/Intermediate/Build/Win64/x64/UnrealEditor/Development/UpdateRateOptimisationBlueprints/UpdateRateOptimisationBlueprintsBPLibrary.cpp.sarif"
-/sourceDependencies "C:/Users/Matt/Documents/Unreal Projects/fiveseven/Plugins/UpdateRateOptimisationBlueprints/Intermediate/Build/Win64/x64/UnrealEditor/Development/UpdateRateOptimisationBlueprints/UpdateRateOptimisationBlueprintsBPLibrary.cpp.dep.json"
+"C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Plugins/UpdateRateOptimisationBlueprints/Source/UpdateRateOptimisationBlueprints/Private/UpdateRateOptimisationBlueprintsBPLibrary.cpp"
+@"C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Plugins/UpdateRateOptimisationBlueprints/Intermediate/Build/Win64/x64/UnrealEditor/Development/UpdateRateOptimisationBlueprints/UpdateRateOptimisationBlueprints.Shared.rsp"
+/FI"C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Intermediate/Build/Win64/x64/FiveEightEGLEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h"
+/FI"C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Plugins/UpdateRateOptimisationBlueprints/Intermediate/Build/Win64/x64/UnrealEditor/Development/UpdateRateOptimisationBlueprints/Definitions.UpdateRateOptimisationBlueprints.h"
+/Yu"C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Intermediate/Build/Win64/x64/FiveEightEGLEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h"
+/Fp"C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Intermediate/Build/Win64/x64/FiveEightEGLEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h.pch"
+/Fo"C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Plugins/UpdateRateOptimisationBlueprints/Intermediate/Build/Win64/x64/UnrealEditor/Development/UpdateRateOptimisationBlueprints/UpdateRateOptimisationBlueprintsBPLibrary.cpp.obj"
+/experimental:log "C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Plugins/UpdateRateOptimisationBlueprints/Intermediate/Build/Win64/x64/UnrealEditor/Development/UpdateRateOptimisationBlueprints/UpdateRateOptimisationBlueprintsBPLibrary.cpp.sarif"
+/sourceDependencies "C:/Users/Matt/Documents/Unreal Projects/FiveEightEGL/Plugins/UpdateRateOptimisationBlueprints/Intermediate/Build/Win64/x64/UnrealEditor/Development/UpdateRateOptimisationBlueprints/UpdateRateOptimisationBlueprintsBPLibrary.cpp.dep.json"
 /nologo
-/Oi
-/FC
-/diagnostics:caret
-/c
-/Gw
-/Gy
-/utf-8
-/wd4819
-/DSAL_NO_ATTRIBUTE_DECLARATIONS=1
-/permissive-
-/Zc:strictStrings-
-/Zc:__cplusplus
-/Zc:inline
-/Zc:preprocessor
-/D_CRT_STDIO_LEGACY_WIDE_SPECIFIERS=1
-/D_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS=1
-/D_WINDLL
-/D_DISABLE_EXTENDED_ALIGNED_STORAGE
-/Ob2
-/d2ExtendedWarningInfo
-/Ox
-/Ot
-/GF
-/errorReport:prompt
-/EHsc
-/DPLATFORM_EXCEPTIONS_DISABLED=0
-/Z7
-/MD
-/bigobj
-/fp:fast
-/Zo
-/Zp8
-/W4
-/we4456
-/we4458
-/we4459
-/wd4244
-/wd4838
-/we4668
-/wd4267
-/wd4100
 /TP
 /GR-
 /std:c++20

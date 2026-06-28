@@ -12,6 +12,8 @@
 #define UPDATERATEOPTIMISATIONBLUEPRINTS_UpdateRateOptimisationBlueprintsBPLibrary_generated_h
 
 #include "UObject/ObjectMacros.h"
+#include "UObject/ReflectedTypeAccessors.h"
+#include "Templates/IsUEnumClass.h"
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
@@ -22,9 +24,11 @@ struct FUpdateRateOptimisationStruct;
 
 // ********** Begin ScriptStruct FUpdateRateOptimisationStruct *************************************
 struct Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics;
-#define FID_Users_Matt_Documents_Unreal_Projects_fiveseven_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_23_GENERATED_BODY \
+UPDATERATEOPTIMISATIONBLUEPRINTS_API UScriptStruct* Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct(ETypeConstructPhase);
+
+#define FID_FiveEightEGL_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_27_GENERATED_BODY \
 	friend struct ::Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct_Statics; \
-	UPDATERATEOPTIMISATIONBLUEPRINTS_API static class UScriptStruct* StaticStruct();
+	UE_NODEBUG static UScriptStruct* StaticStruct() { return Z_Construct_UScriptStruct_FUpdateRateOptimisationStruct(ETypeConstructPhase::Inner); }
 
 
 struct FUpdateRateOptimisationStruct;
@@ -32,20 +36,18 @@ struct FUpdateRateOptimisationStruct;
 
 // ********** Begin Class UUpdateRateOptimisationDataAsset *****************************************
 struct Z_Construct_UClass_UUpdateRateOptimisationDataAsset_Statics;
-UPDATERATEOPTIMISATIONBLUEPRINTS_API UClass* Z_Construct_UClass_UUpdateRateOptimisationDataAsset_NoRegister();
+UPDATERATEOPTIMISATIONBLUEPRINTS_API UClass* Z_Construct_UClass_UUpdateRateOptimisationDataAsset(ETypeConstructPhase);
 
-#define FID_Users_Matt_Documents_Unreal_Projects_fiveseven_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_70_INCLASS_NO_PURE_DECLS \
+#define FID_FiveEightEGL_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_74_INCLASS_NO_PURE_DECLS \
 private: \
-	static void StaticRegisterNativesUUpdateRateOptimisationDataAsset(); \
 	friend struct ::Z_Construct_UClass_UUpdateRateOptimisationDataAsset_Statics; \
-	static UClass* GetPrivateStaticClass(); \
-	friend UPDATERATEOPTIMISATIONBLUEPRINTS_API UClass* ::Z_Construct_UClass_UUpdateRateOptimisationDataAsset_NoRegister(); \
+	friend UPDATERATEOPTIMISATIONBLUEPRINTS_API UClass* ::Z_Construct_UClass_UUpdateRateOptimisationDataAsset(ETypeConstructPhase); \
 public: \
-	DECLARE_CLASS2(UUpdateRateOptimisationDataAsset, UPrimaryDataAsset, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/UpdateRateOptimisationBlueprints"), Z_Construct_UClass_UUpdateRateOptimisationDataAsset_NoRegister) \
+	DECLARE_CLASS2(UUpdateRateOptimisationDataAsset, UPrimaryDataAsset, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/UpdateRateOptimisationBlueprints"), Z_Construct_UClass_UUpdateRateOptimisationDataAsset) \
 	DECLARE_SERIALIZER(UUpdateRateOptimisationDataAsset)
 
 
-#define FID_Users_Matt_Documents_Unreal_Projects_fiveseven_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_70_ENHANCED_CONSTRUCTORS \
+#define FID_FiveEightEGL_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_74_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UUpdateRateOptimisationDataAsset(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -57,12 +59,12 @@ public: \
 	NO_API virtual ~UUpdateRateOptimisationDataAsset();
 
 
-#define FID_Users_Matt_Documents_Unreal_Projects_fiveseven_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_67_PROLOG
-#define FID_Users_Matt_Documents_Unreal_Projects_fiveseven_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_70_GENERATED_BODY \
+#define FID_FiveEightEGL_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_71_PROLOG
+#define FID_FiveEightEGL_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_74_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_Matt_Documents_Unreal_Projects_fiveseven_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_70_INCLASS_NO_PURE_DECLS \
-	FID_Users_Matt_Documents_Unreal_Projects_fiveseven_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_70_ENHANCED_CONSTRUCTORS \
+	FID_FiveEightEGL_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_74_INCLASS_NO_PURE_DECLS \
+	FID_FiveEightEGL_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_74_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -72,7 +74,7 @@ class UUpdateRateOptimisationDataAsset;
 // ********** End Class UUpdateRateOptimisationDataAsset *******************************************
 
 // ********** Begin Class UUpdateRateOptimisationBlueprintsBPLibrary *******************************
-#define FID_Users_Matt_Documents_Unreal_Projects_fiveseven_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_80_RPC_WRAPPERS \
+#define FID_FiveEightEGL_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_84_RPC_WRAPPERS \
 	DECLARE_FUNCTION(execGetCurrentUpdateRate); \
 	DECLARE_FUNCTION(execGetCurrentMaxDistanceFactor); \
 	DECLARE_FUNCTION(execGetInterpolateSkippedFrames); \
@@ -100,20 +102,18 @@ class UUpdateRateOptimisationDataAsset;
 
 
 struct Z_Construct_UClass_UUpdateRateOptimisationBlueprintsBPLibrary_Statics;
-UPDATERATEOPTIMISATIONBLUEPRINTS_API UClass* Z_Construct_UClass_UUpdateRateOptimisationBlueprintsBPLibrary_NoRegister();
+UPDATERATEOPTIMISATIONBLUEPRINTS_API UClass* Z_Construct_UClass_UUpdateRateOptimisationBlueprintsBPLibrary(ETypeConstructPhase);
 
-#define FID_Users_Matt_Documents_Unreal_Projects_fiveseven_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_80_INCLASS \
+#define FID_FiveEightEGL_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_84_INCLASS \
 private: \
-	static void StaticRegisterNativesUUpdateRateOptimisationBlueprintsBPLibrary(); \
 	friend struct ::Z_Construct_UClass_UUpdateRateOptimisationBlueprintsBPLibrary_Statics; \
-	static UClass* GetPrivateStaticClass(); \
-	friend UPDATERATEOPTIMISATIONBLUEPRINTS_API UClass* ::Z_Construct_UClass_UUpdateRateOptimisationBlueprintsBPLibrary_NoRegister(); \
+	friend UPDATERATEOPTIMISATIONBLUEPRINTS_API UClass* ::Z_Construct_UClass_UUpdateRateOptimisationBlueprintsBPLibrary(ETypeConstructPhase); \
 public: \
-	DECLARE_CLASS2(UUpdateRateOptimisationBlueprintsBPLibrary, UBlueprintFunctionLibrary, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/UpdateRateOptimisationBlueprints"), Z_Construct_UClass_UUpdateRateOptimisationBlueprintsBPLibrary_NoRegister) \
+	DECLARE_CLASS2(UUpdateRateOptimisationBlueprintsBPLibrary, UBlueprintFunctionLibrary, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/UpdateRateOptimisationBlueprints"), Z_Construct_UClass_UUpdateRateOptimisationBlueprintsBPLibrary) \
 	DECLARE_SERIALIZER(UUpdateRateOptimisationBlueprintsBPLibrary)
 
 
-#define FID_Users_Matt_Documents_Unreal_Projects_fiveseven_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_80_STANDARD_CONSTRUCTORS \
+#define FID_FiveEightEGL_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_84_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UUpdateRateOptimisationBlueprintsBPLibrary(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UUpdateRateOptimisationBlueprintsBPLibrary) \
@@ -125,13 +125,13 @@ public: \
 	NO_API virtual ~UUpdateRateOptimisationBlueprintsBPLibrary();
 
 
-#define FID_Users_Matt_Documents_Unreal_Projects_fiveseven_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_77_PROLOG
-#define FID_Users_Matt_Documents_Unreal_Projects_fiveseven_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_80_GENERATED_BODY_LEGACY \
+#define FID_FiveEightEGL_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_81_PROLOG
+#define FID_FiveEightEGL_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_84_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_Matt_Documents_Unreal_Projects_fiveseven_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_80_RPC_WRAPPERS \
-	FID_Users_Matt_Documents_Unreal_Projects_fiveseven_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_80_INCLASS \
-	FID_Users_Matt_Documents_Unreal_Projects_fiveseven_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_80_STANDARD_CONSTRUCTORS \
+	FID_FiveEightEGL_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_84_RPC_WRAPPERS \
+	FID_FiveEightEGL_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_84_INCLASS \
+	FID_FiveEightEGL_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h_84_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -141,7 +141,7 @@ class UUpdateRateOptimisationBlueprintsBPLibrary;
 // ********** End Class UUpdateRateOptimisationBlueprintsBPLibrary *********************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_Matt_Documents_Unreal_Projects_fiveseven_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h
+#define CURRENT_FILE_ID FID_FiveEightEGL_Plugins_UpdateRateOptimisationBlueprints_Source_UpdateRateOptimisationBlueprints_Public_UpdateRateOptimisationBlueprintsBPLibrary_h
 
 // ********** Begin Enum EUpdateRateOptimisationMode ***********************************************
 #define FOREACH_ENUM_EUPDATERATEOPTIMISATIONMODE(op) \
@@ -151,7 +151,7 @@ class UUpdateRateOptimisationBlueprintsBPLibrary;
 
 enum class EUpdateRateOptimisationMode : uint8;
 template<> struct TIsUEnumClass<EUpdateRateOptimisationMode> { enum { Value = true }; };
-template<> UPDATERATEOPTIMISATIONBLUEPRINTS_NON_ATTRIBUTED_API UEnum* StaticEnum<EUpdateRateOptimisationMode>();
+template<> UE_NODEBUG UPDATERATEOPTIMISATIONBLUEPRINTS_NON_ATTRIBUTED_API UEnum* StaticEnum<EUpdateRateOptimisationMode>();
 // ********** End Enum EUpdateRateOptimisationMode *************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
